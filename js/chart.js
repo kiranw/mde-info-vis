@@ -57,7 +57,7 @@ function ready(error, data, yourdata) {
         .enter().append("path")
         .attr("d", path)
         .attr("class","country")
-        .style("fill", function(d) { return color(dataById[d.id]); })
+        .style("fill", function(d) { return "#001e38"; })
         .style('stroke', 'white')
         .style('stroke-width', 1.5)
         .style("opacity",0.95)
