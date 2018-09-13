@@ -1,0 +1,243 @@
+id	name	Percentages of Adults who Reported owning a Smart Phone
+AFG	Afghanistan	null
+218	Akrotiri	null
+ALB	Albania	null
+DZA	Algeria	null
+202	American Samoa	null
+198	Andorra	null
+AGO	Angola	null
+221	Anguilla	null
+ATA	Antarctica	null
+197	Antigua and Barbuda	null
+ARG	Argentina	82
+ARM	Armenia	null
+192	Aruba	null
+AUS	Australia	65
+AUT	Austria	null
+AZE	Azerbaijan	null
+BHS	Bahamas, The	null
+163	Bahrain	null
+BGD	Bangladesh	null
+180	Barbados	null
+BLR	Belarus	null
+BEL	Belgium	null
+BLZ	Belize	null
+BEN	Benin	null
+201	Bermuda	null
+BTN	Bhutan	null
+BOL	Bolivia	null
+BIH	Bosnia and Herzegovina	null
+BWA	Botswana	null
+BRA	Brazil	54
+215	British Virgin Islands	null
+BRN	Brunei	null
+BGR	Bulgaria	null
+BFA	Burkina Faso	null
+MMR	Burma	null
+BDI	Burundi	null
+KHM	Cambodia	null
+CMR	Cameroon	null
+CAN	Canada	71
+169	Cape Verde	null
+206	Cayman Islands	null
+CAF	Central African Republic	null
+TCD	Chad	null
+CHL	Chile	72
+CHN	China	68
+232	Christmas Island	null
+236	Cocos (Keeling) Islands	null
+COL	Colombia	56
+160	Comoros	null
+COD	Congo, Democratic Republic of the	null
+COG	Congo, Republic of the	null
+223	Cook Islands	null
+CRI	Costa Rica	null
+CIV	Cote d'Ivoire	null
+HRV	Croatia	null
+CUB	Cuba	null
+CYP	Cyprus	null
+CZE	Czech Republic	null
+DNK	Denmark	null
+219	Dhekelia	null
+DJI	Djibouti	null
+DOM	Dominica	null
+DOM	Dominican Republic	null
+ECU	Ecuador	null
+EGY	Egypt	null
+SLV	El Salvador	null
+GNQ	Equatorial Guinea	null
+ERI	Eritrea	null
+EST	Estonia	null
+ETH	Ethiopia	null
+FLK	Falkland Islands (Islas Malvinas)	null
+208	Faroe Islands	null
+FJI	Fiji	null
+FIN	Finland	null
+FRA	France	62
+179	French Polynesia	null
+ATF	French Southern and Antarctic Lands	null
+GAB	Gabon	null
+GMB	Gambia, The	null
+149	Gaza Strip	null
+GEO	Georgia	null
+DEU	Germany	72
+GHA	Ghana	35
+214	Gibraltar	null
+GRC	Greece	53
+GRL	Greenland	null
+190	Grenada	null
+GTM	Guatemala	null
+204	Guernsey	null
+GIN	Guinea	null
+GNB	Guinea-Bissau	null
+GUY	Guyana	null
+HTI	Haiti	null
+235	Holy See (Vatican City)	null
+HND	Honduras	null
+HKG	Hong Kong	null
+HUN	Hungary	61
+ISL	Iceland	null
+IND	India	22
+IDN	Indonesia	27
+IRN	Iran	null
+IRQ	Iraq	null
+IRL	Ireland	null
+199	Isle of Man	null
+ISR	Israel	83
+ITA	Italy	67
+JAM	Jamaica	null
+JPN	Japan	59
+195	Jersey	null
+JOR	Jordan	76
+KAZ	Kazakhstan	null
+KEN	Kenya	30
+194	Kiribati	null
+PRK	Korea, North	null
+KOR	Korea, South	94
+KWT	Kosovo	null
+OSA	Kosovo	null
+KWT	Kuwait	null
+KGZ	Kyrgyzstan	null
+LAO	Laos	null
+LVA	Latvia	null
+LBN	Lebanon	80
+LSO	Lesotho	null
+LBR	Liberia	null
+LBY	Libya	null
+210	Liechtenstein	null
+LTU	Lithuania	null
+LUX	Luxembourg	null
+168	Macau	null
+MKD	Macedonia	null
+MDG	Madagascar	null
+MWI	Malawi	null
+MYS	Malaysia	null
+174	Maldives	null
+MLI	Mali	null
+173	Malta	null
+203	Marshall Islands	null
+MRT	Mauritania	null
+153	Mauritius	null
+181	Mayotte	null
+MEX	Mexico	42
+191	Micronesia, Federated States of	null
+MDA	Moldova	null
+212	Monaco	null
+MNG	Mongolia	null
+MNE	Montenegro	null
+228	Montserrat	null
+MAR	Morocco	null
+MOZ	Mozambique	null
+NAM	Namibia	null
+222	Nauru	null
+NPL	Nepal	null
+NLD	Netherlands	80
+183	Netherlands Antilles	null
+NCL	New Caledonia	null
+NZL	New Zealand	null
+NIC	Nicaragua	null
+NER	Niger	null
+NGA	Nigeria	32
+234	Niue	null
+230	Norfolk Island	null
+209	Northern Mariana Islands	null
+NOR	Norway	null
+OMN	Oman	null
+PAK	Pakistan	null
+217	Palau	null
+PAN	Panama	null
+PNG	Papua New Guinea	null
+PRY	Paraguay	null
+PER	Peru	41
+PHL	Philippines	44
+237	Pitcairn Islands	null
+POL	Poland	57
+PRT	Portugal	null
+PRI	Puerto Rico	null
+QAT	Qatar	null
+ROU	Romania	null
+RUS	Russia	59
+RWA	Rwanda	null
+226	Saint Barthelemy	null
+225	Saint Helena, Ascension, and Tristan da Cunha	null
+207	Saint Kitts and Nevis	null
+187	Saint Lucia	null
+213	Saint Martin	null
+227	Saint Pierre and Miquelon	null
+193	Saint Vincent and the Grenadines	null
+185	Samoa	null
+211	San Marino	null
+186	Sao Tome and Principe	null
+SAU	Saudi Arabia	null
+SEN	Senegal	34
+SRB	Serbia	null
+196	Seychelles	null
+SLE	Sierra Leone	null
+SGP	Singapore	null
+SVK	Slovakia	null
+SVN	Slovenia	null
+SLB	Solomon Islands	null
+SOM	Somalia	null
+ABV	Somaliland	null
+ZAF	South Africa	51
+SDS	South Sudan	null
+ESP	Spain	79
+LKA	Sri Lanka	null
+SDN	Sudan	null
+SUR	Suriname	null
+231	Svalbard	null
+SWZ	Swaziland	null
+SWE	Sweden	80
+CHE	Switzerland	null
+SYR	Syria	null
+TWN	Taiwan	null
+TJK	Tajikistan	null
+TZA	Tanzania	13
+THA	Thailand	null
+TLS	Timor-Leste	null
+TGO	Togo	null
+233	Tokelau	null
+188	Tonga	null
+TTO	Trinidad and Tobago	null
+TUN	Tunisia	27
+TUR	Turkey	69
+TKM	Turkmenistan	null
+216	Turks and Caicos Islands	null
+224	Tuvalu	null
+UGA	Uganda	null
+UKR	Ukraine	null
+ARE	United Arab Emirates	null
+GBR	United Kingdom	72
+USA	United States	77
+URY	Uruguay	null
+UZB	Uzbekistan	null
+VUT	Vanuatu	null
+VEN	Venezuela	38
+VNM	Vietnam	53
+189	Virgin Islands	null
+220	Wallis and Futuna	null
+PSE	West Bank	null
+ESH	Western Sahara	null
+YEM	Yemen	null
+ZMB	Zambia	null
+ZWE	Zimbabwe	null
