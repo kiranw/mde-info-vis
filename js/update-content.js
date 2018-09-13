@@ -65,17 +65,17 @@ function jenny() {
     images = [];
 
     // Put your data file name here
-    datapath = "data_template.csv";
+    datapath = "jenny_data.csv";
 
     // Add your references, one per line in this format
     references = [
-        '"“Statistics and Market Data about the Internet.” Statista, 2018. https://www.statista.com/markets/424/internet/',
-        '“United Nations E-Government Development Database (UNeGovDD) Knowledgebase.” UN, 2018. https://publicadministration.un.org/egovkb/en-us/Data-Center',
-        '“World Telecommunication/ICT Indicators Database.” International Telecommunications Union, July 2018. https://www.itu.int/en/ITU-D/Statistics/Pages/stat/default.aspx "'
+        "'Statistics and Market Data about the Internet.' Statista, 2018. https://www.statista.com/markets/424/internet/",
+        "'United Nations E-Government Development Database (UNeGovDD) Knowledgebase.' UN, 2018. https://publicadministration.un.org/egovkb/en-us/Data-Center",
+        "'World Telecommunication/ICT Indicators Database.' International Telecommunications Union, July 2018. https://www.itu.int/en/ITU-D/Statistics/Pages/stat/default.aspx",
     ]
 
     // Update these fields and put them in quotes
-    $("#chart-title").text("Chart title");
+    $("#chart-title").text("Distributed Governance of Digital Infrastructure");
     $("#section-title").text("Understanding the physical assets support the parallel digital world");
     $("#section-name").text("Jenny Fan");
     $("#section-description").text("Description paragraph of your text");
