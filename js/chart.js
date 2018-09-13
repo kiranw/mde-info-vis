@@ -31,18 +31,24 @@ var projection = d3.geoMercator()
 
 var path = d3.geoPath().projection(projection);
 
+var data_template = {};
+var data_country_to_id = {};
+
 svg.call(tip);
 
 queue()
     .defer(d3.json, "js/world_countries.json")
-    .defer(d3.tsv, "data/test-data.tsv")
+    .defer(d3.csv, "data/data_template.csv")
     .await(ready);
 
-function ready(error, data, population) {
-    var populationById = {};
+function ready(error, data, yourdata) {
+    var dataById = {};
 
-    population.forEach(function(d) { populationById[d.id] = +d.population; });
-    data.features.forEach(function(d) { d.population = populationById[d.id] });
+    yourdata.forEach(function(d) { data_template[d.id] = null; });
+    yourdata.forEach(function(d) { data_country_to_id[d.name] = d.id; });
+
+    yourdata.forEach(function(d) { dataById[d.id] = +d.yourcolumn; });
+    data.features.forEach(function(d) { d.yourcolumnname = dataById[d.id] });
 
     svg.append("g")
         .attr("class", "countries")
@@ -50,7 +56,8 @@ function ready(error, data, population) {
         .data(data.features)
         .enter().append("path")
         .attr("d", path)
-        .style("fill", function(d) { return color(populationById[d.id]); })
+        .attr("class","country")
+        .style("fill", function(d) { return color(dataById[d.id]); })
         .style('stroke', 'white')
         .style('stroke-width', 1.5)
         .style("opacity",0.8)
