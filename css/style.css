@@ -32,8 +32,12 @@ body {
     font-family: "IBM Plex Sans";
 }
 
+#chart-legend {
+    height: 50px;
+}
+
 #chart-container {
-    /*background-color:#032f56;*/
+    margin-top: -5%;
 }
 
 #section {
@@ -160,3 +164,10 @@ body {
 }
 
 
+.label {
+    fill: white;
+    stroke: 0px;
+    font-family: "IBM Plex Mono";
+    font-size: 1em;
+    font-weight: 300;
+}

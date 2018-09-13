@@ -60,7 +60,7 @@ function ready(error, data, yourdata) {
         .style("fill", function(d) { return color(dataById[d.id]); })
         .style('stroke', 'white')
         .style('stroke-width', 1.5)
-        .style("opacity",0.8)
+        .style("opacity",0.95)
         // tooltips
         .style("stroke","white")
         .style('stroke-width', 0.3)
@@ -76,7 +76,7 @@ function ready(error, data, yourdata) {
             tip.hide(d);
 
             d3.select(this)
-                .style("opacity", 0.8)
+                .style("opacity", 0.95)
                 .style("stroke","white")
                 .style("stroke-width",0.3);
         });
