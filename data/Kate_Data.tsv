@@ -1,0 +1,243 @@
+id	name	Internet Penetration Rate
+AFG	Afghanistan	10.60
+218	Akrotiri	null
+ALB	Albania	66.36
+DZA	Algeria	42.95
+202	American Samoa	null
+198	Andorra	97.93
+AGO	Angola	13.00
+221	Anguilla	81.57
+ATA	Antarctica	null
+197	Antigua and Barbuda	73.00
+ARG	Argentina	70.15
+ARM	Armenia	62.00
+192	Aruba	93.54
+AUS	Australia	88.24
+AUT	Austria	84.32
+AZE	Azerbaijan	78.20
+BHS	Bahamas, The	80.00
+163	Bahrain	98.00
+BGD	Bangladesh	18.25
+180	Barbados	79.55
+BLR	Belarus	71.11
+BEL	Belgium	86.52
+BLZ	Belize	44.58
+BEN	Benin	11.99
+201	Bermuda	98.00
+BTN	Bhutan	41.77
+BOL	Bolivia	39.70
+BIH	Bosnia and Herzegovina	69.33
+BWA	Botswana	39.36
+BRA	Brazil	59.68
+215	British Virgin Islands	null
+BRN	Brunei	75.00
+BGR	Bulgaria	59.83
+BFA	Burkina Faso	13.96
+MMR	Burma	25.07
+BDI	Burundi	5.17
+KHM	Cambodia	25.57
+CMR	Cameroon	25.00
+CAN	Canada	89.84
+169	Cape Verde	48.17
+206	Cayman Islands	79.00
+CAF	Central African Republic	4.00
+TCD	Chad	5.00
+CHL	Chile	66.01
+CHN	China	53.20
+232	Christmas Island	null
+236	Cocos (Keeling) Islands	null
+COL	Colombia	58.14
+160	Comoros	7.94
+COD	Congo, Democratic Republic of the	6.21
+COG	Congo, Republic of the	8.12
+223	Cook Islands	54.00
+CRI	Costa Rica	66.03
+CIV	Cote d'Ivoire	26.53
+HRV	Croatia	72.70
+CUB	Cuba	38.77
+CYP	Cyprus	75.90
+CZE	Czech Republic	76.48
+DNK	Denmark	96.97
+219	Dhekelia	null
+DJI	Djibouti	13.13
+DOM	Dominica	67.03
+DOM	Dominican Republic	61.33
+ECU	Ecuador	54.06
+EGY	Egypt	39.21
+SLV	El Salvador	29.00
+GNQ	Equatorial Guinea	23.78
+ERI	Eritrea	1.18
+EST	Estonia	87.24
+ETH	Ethiopia	15.37
+FLK	Falkland Islands (Islas Malvinas)	99.02
+208	Faroe Islands	95.11
+FJI	Fiji	46.51
+FIN	Finland	87.70
+FRA	France	85.62
+179	French Polynesia	68.44
+ATF	French Southern and Antarctic Lands	null
+GAB	Gabon	48.05
+GMB	Gambia, The	18.50
+149	Gaza Strip	null
+GEO	Georgia	50.00
+DEU	Germany	89.65
+GHA	Ghana	34.67
+214	Gibraltar	94.44
+GRC	Greece	69.09
+GRL	Greenland	68.50
+190	Grenada	55.86
+GTM	Guatemala	34.51
+204	Guernsey	null
+GIN	Guinea	9.80
+GNB	Guinea-Bissau	3.76
+GUY	Guyana	35.66
+HTI	Haiti	12.23
+235	Holy See (Vatican City)	null
+HND	Honduras	30.00
+HKG	Hong Kong	87.30
+HUN	Hungary	79.26
+ISL	Iceland	98.24
+IND	India	29.55
+IDN	Indonesia	25.37
+IRN	Iran	53.23
+IRQ	Iraq	21.23
+IRL	Ireland	82.17
+199	Isle of Man	null
+ISR	Israel	79.78
+ITA	Italy	61.32
+JAM	Jamaica	45.00
+JPN	Japan	92.00
+195	Jersey	
+JOR	Jordan	62.30
+KAZ	Kazakhstan	76.80
+KEN	Kenya	26.00
+194	Kiribati	13.70
+PRK	Korea, North	null
+KOR	Korea, South	92.72
+KWT	Kosovo	null
+OSA	Kosovo	null
+KWT	Kuwait	78.37
+KGZ	Kyrgyzstan	34.50
+LAO	Laos	21.87
+LVA	Latvia	79.89
+LBN	Lebanon	76.11
+LSO	Lesotho	27.36
+LBR	Liberia	7.32
+LBY	Libya	20.27
+210	Liechtenstein	98.09
+LTU	Lithuania	74.38
+LUX	Luxembourg	97.49
+168	Macau	81.64
+MKD	Macedonia	null
+MDG	Madagascar	4.71
+MWI	Malawi	9.61
+MYS	Malaysia	78.79
+174	Maldives	59.09
+MLI	Mali	11.11
+173	Malta	77.29
+203	Marshall Islands	29.79
+MRT	Mauritania	18.00
+153	Mauritius	53.23
+181	Mayotte	null
+MEX	Mexico	59.54
+191	Micronesia, Federated States of	33.35
+MDA	Moldova	71.00
+212	Monaco	95.21
+MNG	Mongolia	22.27
+MNE	Montenegro	69.88
+228	Montserrat	null
+MAR	Morocco	58.27
+MOZ	Mozambique	17.52
+NAM	Namibia	31.03
+222	Nauru	
+NPL	Nepal	19.69
+NLD	Netherlands	90.41
+183	Netherlands Antilles	null
+NCL	New Caledonia	null
+NZL	New Zealand	88.47
+NIC	Nicaragua	24.57
+NER	Niger	4.32
+NGA	Nigeria	25.67
+234	Niue	null
+230	Norfolk Island	null
+209	Northern Mariana Islands	null
+NOR	Norway	97.30
+OMN	Oman	69.82
+PAK	Pakistan	15.51
+217	Palau	null
+PAN	Panama	54.00
+PNG	Papua New Guinea	9.60
+PRY	Paraguay	51.35
+PER	Peru	45.46
+PHL	Philippines	55.50
+237	Pitcairn Islands	73.30
+POL	Poland	70.42
+PRT	Portugal	80.32
+PRI	Puerto Rico	94.29
+QAT	Qatar	94.29
+ROU	Romania	59.50
+RUS	Russia	76.41
+RWA	Rwanda	20.00
+226	Saint Barthelemy	null
+225	Saint Helena, Ascension, and Tristan da Cunha	
+207	Saint Kitts and Nevis	76.82
+187	Saint Lucia	46.73
+213	Saint Martin	null
+227	Saint Pierre and Miquelon	
+193	Saint Vincent and the Grenadines	55.57
+185	Samoa	29.41
+211	San Marino	null
+186	Sao Tome and Principe	null
+SAU	Saudi Arabia	73.75
+SEN	Senegal	25.66
+SRB	Serbia	67.06
+196	Seychelles	56.51
+SLE	Sierra Leone	11.77
+SGP	Singapore	81.00
+SVK	Slovakia	80.48
+SVN	Slovenia	75.50
+SLB	Solomon Islands	11.00
+SOM	Somalia	1.88
+ABV	Somaliland	null
+ZAF	South Africa	54.00
+SDS	South Sudan	null
+ESP	Spain	80.56
+LKA	Sri Lanka	32.05
+SDN	Sudan	28.00
+SUR	Suriname	45.40
+231	Svalbard	null
+SWZ	Swaziland	28.57
+SWE	Sweden	91.51
+CHE	Switzerland	89.41
+SYR	Syria	31.87
+TWN	Taiwan	79.75
+TJK	Tajikistan	20.47
+TZA	Tanzania	13.00
+THA	Thailand	47.50
+TLS	Timor-Leste	25.25
+TGO	Togo	11.31
+233	Tokelau	
+188	Tonga	39.95
+TTO	Trinidad and Tobago	73.30
+TUN	Tunisia	50.88
+TUR	Turkey	58.35
+TKM	Turkmenistan	17.99
+216	Turks and Caicos Islands	null
+224	Tuvalu	46.01
+UGA	Uganda	21.88
+UKR	Ukraine	52.48
+ARE	United Arab Emirates	90.60
+GBR	United Kingdom	94.78
+USA	United States	76.18
+URY	Uruguay	66.40
+UZB	Uzbekistan	46.79
+VUT	Vanuatu	24.00
+VEN	Venezuela	60.00
+VNM	Vietnam	46.50
+189	Virgin Islands	59.61
+220	Wallis and Futuna	null
+PSE	West Bank	61.18
+ESH	Western Sahara	null
+YEM	Yemen	24.58
+ZMB	Zambia	25.51
+ZWE	Zimbabwe	23.12
