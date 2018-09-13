@@ -69,14 +69,14 @@ function jenny() {
 
     // Add your references, one per line in this format
     references = [
-        "reference 1",
-        "reference 2",
-        "reference 3",
+        '"“Statistics and Market Data about the Internet.” Statista, 2018. https://www.statista.com/markets/424/internet/',
+        '“United Nations E-Government Development Database (UNeGovDD) Knowledgebase.” UN, 2018. https://publicadministration.un.org/egovkb/en-us/Data-Center',
+        '“World Telecommunication/ICT Indicators Database.” International Telecommunications Union, July 2018. https://www.itu.int/en/ITU-D/Statistics/Pages/stat/default.aspx "'
     ]
 
     // Update these fields and put them in quotes
     $("#chart-title").text("Chart title");
-    $("#section-title").text("Title of your thing");
+    $("#section-title").text("Understanding the physical assets support the parallel digital world");
     $("#section-name").text("Jenny Fan");
     $("#section-description").text("Description paragraph of your text");
 
@@ -142,7 +142,7 @@ function kate() {
 
 function janet() {
     // put your images in the "img" folder
-    images = [];
+    images = ["Janet_1.png", "Janet_2.png"];
 
     // Put your data file name here
     datapath = "Janet_Data.tsv";
@@ -150,16 +150,17 @@ function janet() {
 
     // Add your references, one per line in this format
     references = [
-        "reference 1",
-        "reference 2",
-        "reference 3",
+        '"Zhang, Amy X., Bryan Culbertson, and Praveen Paritosh. ""Characterizing online discussion using coarse discourse sequences."" In Proceedings of the Eleventh International Conference on Web and Social Media. AAAI Press. 2017.',
+        'We Are Social. 2018. Global Digital Report 2018. https://digitalreport.wearesocial.com',
+        'The Verge. Octover 2017. The Verge Tech Survey. https://www.theverge.com/2017/10/27/16550640/'
     ]
 
     // Update these fields and put them in quotes
-    $("#chart-title").text("Global SNS Penetration Rate");
-    $("#section-title").text("Title of your thing");
+    $("#chart-title").text("Global Social Network Penetration");
+    $("#section-title").text("How can we motivate constructive online conversations?");
     $("#section-name").text("Janet Sung");
-    $("#section-description").text("Description paragraph of your text");
+    $("#section-description").text("" +
+        "In average, global Internet users spend 135 minutes on social network. Messaging family and friends is the most common activity.");
 
     // Dont touch this stuff
     $("#section-images").html(generateImgHTML(images));

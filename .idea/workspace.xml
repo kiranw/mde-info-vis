@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bab2a731-326e-45c7-baf1-f84394fd6750" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/Janet_Data" afterPath="$PROJECT_DIR$/data/Janet_Data.tsv" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/malaria1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/malaria2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/malaria3.jpg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Carla_Data.tsv" afterPath="$PROJECT_DIR$/data/Carla_Data.tsv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Kate_Data.tsv" afterPath="$PROJECT_DIR$/data/Kate_Data.tsv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Saif_Data.tsv" afterPath="$PROJECT_DIR$/data/Saif_Data.tsv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/update-content.js" afterPath="$PROJECT_DIR$/js/update-content.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -22,7 +20,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
@@ -32,11 +30,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="update-content.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Jenny_Data.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/Jenny_Data.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="update-content.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/update-content.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="73">
-              <caret line="308" column="54" lean-forward="false" selection-start-line="308" selection-start-column="54" selection-end-line="308" selection-end-column="54" />
+            <state relative-caret-position="368">
+              <caret line="162" column="137" lean-forward="false" selection-start-line="162" selection-start-column="137" selection-end-line="162" selection-end-column="137" />
               <folding />
             </state>
           </provider>
@@ -75,8 +83,8 @@
       <file leaf-file-name="test-data.tsv" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/test-data.tsv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3330">
-              <caret line="222" column="17" lean-forward="true" selection-start-line="222" selection-start-column="17" selection-end-line="222" selection-end-column="17" />
+            <state relative-caret-position="6990">
+              <caret line="466" column="17" lean-forward="true" selection-start-line="466" selection-start-column="17" selection-end-line="466" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -136,8 +144,8 @@
         <option value="$PROJECT_DIR$/data/Saif_Data.tsv" />
         <option value="$PROJECT_DIR$/data/Janet_Data.tsv" />
         <option value="$PROJECT_DIR$/data/Carla_Data.tsv" />
-        <option value="$PROJECT_DIR$/js/update-content.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/update-content.js" />
       </list>
     </option>
   </component>
@@ -228,12 +236,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1536801973041</updated>
-      <workItem from="1536801975555" duration="16066000" />
+      <workItem from="1536801975555" duration="16743000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16066000" />
+    <option name="totallyTimeSpent" value="16743000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -302,8 +310,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data/test-data.tsv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3330">
-          <caret line="222" column="17" lean-forward="true" selection-start-line="222" selection-start-column="17" selection-end-line="222" selection-end-column="17" />
+        <state relative-caret-position="6990">
+          <caret line="466" column="17" lean-forward="true" selection-start-line="466" selection-start-column="17" selection-end-line="466" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -340,18 +348,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/update-content.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="308" column="54" lean-forward="false" selection-start-line="308" selection-start-column="54" selection-end-line="308" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="80" column="22" lean-forward="false" selection-start-line="80" selection-start-column="22" selection-end-line="80" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Jenny_Data.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/update-content.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="162" column="137" lean-forward="false" selection-start-line="162" selection-start-column="137" selection-end-line="162" selection-end-column="137" />
           <folding />
         </state>
       </provider>
