@@ -29,6 +29,7 @@ body {
 #chart-title {
     font-size: 2.5em;
     margin-bottom: 5%;
+    font-family: "IBM Plex Sans";
 }
 
 #chart-container {
@@ -45,6 +46,7 @@ body {
 #section-title {
     font-size: 2.5em;
     margin-bottom: 5%;
+    font-weight: 800;
 }
 
 #section-name {
@@ -56,6 +58,8 @@ body {
 #section-description {
     font-size: 1.5em;
     margin-bottom: 10%;
+    font-family: "IBM Plex Serif";
+    font-weight: 300;
 }
 
 #section-images {
@@ -74,6 +78,8 @@ body {
 }
 
 .reference {
+    font-size: 1.3em;
+    margin-bottom: 10px;
 }
 
 
@@ -90,10 +96,10 @@ body {
 .d3-tip {
     line-height: 1.5;
     font-weight: 400;
-    font-family:"avenir next", Arial, sans-serif;
+    font-family:"IBM Plex Mono";
     padding: 6px;
     background: rgba(0, 0, 0, 0.6);
-    color: #FFA500;
+    color: #ce7361;
     border-radius: 1px;
     pointer-events: none;
 }
@@ -152,3 +158,5 @@ body {
 .details{
     color:white;
 }
+
+
