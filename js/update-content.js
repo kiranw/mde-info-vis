@@ -9,11 +9,11 @@ function carla() {
     console.log("called");
     // put your images in the "img" folder
     images = [
-        "malaria1.png"
     ];
 
     // Put your data file name here
-    datapath = "data_template.csv";
+    datapath = "Carla_Data.tsv";
+    updateSaifData(datapath);
 
     // Add your references, one per line in this format
     references = [
@@ -21,6 +21,7 @@ function carla() {
     ]
 
     // Update these fields and put them in quotes
+    $("#chart-title").text("Global Values (GWh)");
     $("#section-title").text("Title of your thing");
     $("#section-name").text("Carla Saad");
     $("#section-description").text("Description paragraph of your text");
@@ -61,7 +62,7 @@ function terra() {
 
 function jenny() {
     // put your images in the "img" folder
-    images = ["malaria1.png", "malaria2.png"];
+    images = [];
 
     // Put your data file name here
     datapath = "jenny_data.csv";
@@ -87,10 +88,11 @@ function jenny() {
 
 function saif() {
     // put your images in the "img" folder
-    images = ["malaria1.png", "malaria2.png"];
+    images = [];
 
     // Put your data file name here
-    datapath = "data_template.csv";
+    datapath = "Saif_Data.tsv";
+    updateSaifData(datapath);
 
     // Add your references, one per line in this format
     references = [
@@ -114,20 +116,19 @@ function saif() {
 
 function kate() {
     // put your images in the "img" folder
-    images = ["malaria1.png", "malaria2.png"];
+    images = [];
 
     // Put your data file name here
-    datapath = "data_template.csv";
+    datapath = "Kate_Data.tsv";
+    updateKateData(datapath);
 
     // Add your references, one per line in this format
     references = [
-        "reference 1",
-        "reference 2",
-        "reference 3",
+        "reference 1"
     ]
 
     // Update these fields and put them in quotes
-    $("#chart-title").text("Chart title");
+    $("#chart-title").text("Global Internet Penetration Rates");
     $("#section-title").text("Title of your thing");
     $("#section-name").text("Kate Spies");
     $("#section-description").text("Description paragraph of your text");
@@ -141,23 +142,25 @@ function kate() {
 
 function janet() {
     // put your images in the "img" folder
-    images = ["malaria1.png", "malaria2.png"];
+    images = ["Janet_1.png", "Janet_2.png"];
 
     // Put your data file name here
-    datapath = "data_template.csv";
+    datapath = "Janet_Data.tsv";
+    updateSaifDataMinMax(datapath, 0,100);
 
     // Add your references, one per line in this format
     references = [
-        "reference 1",
-        "reference 2",
-        "reference 3",
+        '"Zhang, Amy X., Bryan Culbertson, and Praveen Paritosh. ""Characterizing online discussion using coarse discourse sequences."" In Proceedings of the Eleventh International Conference on Web and Social Media. AAAI Press. 2017.',
+        'We Are Social. 2018. Global Digital Report 2018. https://digitalreport.wearesocial.com',
+        'The Verge. Octover 2017. The Verge Tech Survey. https://www.theverge.com/2017/10/27/16550640/'
     ]
 
     // Update these fields and put them in quotes
-    $("#chart-title").text("Chart title");
-    $("#section-title").text("Title of your thing");
+    $("#chart-title").text("Global Social Network Penetration");
+    $("#section-title").text("How can we motivate constructive online conversations?");
     $("#section-name").text("Janet Sung");
-    $("#section-description").text("Description paragraph of your text");
+    $("#section-description").text("" +
+        "In average, global Internet users spend 135 minutes on social network. Messaging family and friends is the most common activity.");
 
     // Dont touch this stuff
     $("#section-images").html(generateImgHTML(images));
@@ -167,7 +170,7 @@ function janet() {
 
 function kiran() {
     // put your images in the "img" folder
-    images = ["malaria1.png", "malaria2.png"];
+    images = [];
 
     // Put your data file name here
     datapath = "kiran_data.csv";
@@ -195,6 +198,12 @@ function kiran() {
 
 
 
+
+
+
+
+
+
 function generateImgHTML(images) {
     var imgHTML = "";
     var imgPrefix = '<img class="section-image" src="img/';
@@ -212,6 +221,182 @@ function generateReferenceHTML(references) {
 }
 
 
+
+
+
+
+
+
+
+
+function updateSaifData(dataPath) {
+    d3.json("js/world_countries.json", function(data){
+        d3.tsv("data/" + dataPath, function(customData){
+            min = Math.pow(10, 1000);
+            max = -Math.pow(10, 1000);
+
+            var dataById = data_template;
+            customData.forEach(function(d) {
+                if (d.values != null) {
+                    if (+d.values > max) {
+                        max = +d.values;
+                    }
+                    if (+d.values < min) {
+                        min = +d.values;
+                    }
+                    dataById[data_country_to_id[d.name]] = +d.values;
+                }
+            });
+            console.log(dataById);
+            data.features.forEach(function(d) { d.countries = dataById[d.id] });
+
+
+            colorSaif = d3.scaleLinear().domain([min,max])
+                .range([d3.rgb("#F2F2F2"), d3.rgb('#e03b1a')]);
+
+            console.log(dataById);
+
+            $("#chart-legend").innerHTML = "";
+
+            var legendsvg = d3.select("#chart-legend")
+                .append("svg")
+                .attr("height", 40)
+                .attr("width", 800)
+                .attr("id","legend");
+
+            var colorLegend = d3.legendColor()
+                .shapeWidth(50)
+                .shapeHeight(15)
+                .cells(11)
+                .orient("horizontal")
+                .scale(colorSaif);
+
+            legendsvg.append("g")
+                .attr("class", "legendLinear")
+                .attr("color", "white")
+                .call(colorLegend);
+
+            d3.selectAll(".country")
+                .transition()
+                .duration(300)
+                .style("fill", function(d){
+                    if (dataById[d.id] == null || isNaN(dataById[d.id])){
+                        return "#032c4f";
+                    }
+                    return colorSaif(dataById[d.id]); })
+        })
+    })
+}
+
+
+
+
+function updateSaifDataMinMax(dataPath, min, max){
+    d3.json("js/world_countries.json", function(data){
+        d3.tsv("data/" + dataPath, function(customData){
+            min = Math.pow(10, 1000);
+            max = -Math.pow(10, 1000);
+
+            var dataById = data_template;
+            customData.forEach(function(d) {
+                if (d.values != null) {
+                    dataById[data_country_to_id[d.name]] = +d.values;
+                }
+            });
+            console.log(dataById);
+            data.features.forEach(function(d) { d.countries = dataById[d.id] });
+
+
+            colorSaif = d3.scaleLinear().domain([0,100])
+                .range([d3.rgb("#F2F2F2"), d3.rgb('#e03b1a')]);
+
+            console.log(dataById);
+
+            $("#chart-legend").innerHTML = "";
+
+            var legendsvg = d3.select("#chart-legend")
+                .append("svg")
+                .attr("height", 40)
+                .attr("width", 800)
+                .attr("id","legend");
+
+            var colorLegend = d3.legendColor()
+                .shapeWidth(50)
+                .shapeHeight(15)
+                .cells(11)
+                .orient("horizontal")
+                .scale(colorSaif);
+
+            legendsvg.append("g")
+                .attr("class", "legendLinear")
+                .attr("color", "white")
+                .call(colorLegend);
+
+            d3.selectAll(".country")
+                .transition()
+                .duration(300)
+                .style("fill", function(d){
+                    if (dataById[d.id] == null || isNaN(dataById[d.id])){
+                        return "#032c4f";
+                    }
+                    return colorSaif(dataById[d.id]); })
+        })
+    })
+}
+
+
+
+function updateKateData(dataPath) {
+    d3.json("js/world_countries.json", function(data){
+        d3.tsv("data/" + dataPath, function(customData){
+            min = Math.pow(10, 1000);
+            max = -Math.pow(10, 1000);
+
+            var dataById = data_template;
+            customData.forEach(function(d) {
+                dataById[data_country_to_id[d.name]] = +d.values;
+            });
+            console.log(dataById);
+            data.features.forEach(function(d) { d.countries = dataById[d.id] });
+
+
+            colorKate = d3.scaleLinear().domain([0,100])
+            // .interpolate(d3.interpolateHcl)
+                .range([d3.rgb("#F2F2F2"), d3.rgb('#e03b1a')]);
+
+            console.log(dataById);
+
+            $("#chart-legend").innerHTML = "";
+
+            var legendsvg = d3.select("#chart-legend")
+                .append("svg")
+                .attr("height", 40)
+                .attr("width", 800)
+                .attr("id","legend");
+
+            var colorLegend = d3.legendColor()
+                .shapeWidth(50)
+                .shapeHeight(15)
+                .cells(11)
+                .orient("horizontal")
+                .scale(colorKate);
+
+            legendsvg.append("g")
+                .attr("class", "legendLinear")
+                .attr("color", "white")
+                .call(colorLegend);
+
+            d3.selectAll(".country")
+                .transition()
+                .duration(300)
+                .style("fill", function(d){
+                    if (dataById[d.id] == null || isNaN(dataById[d.id])){
+                        return "#032c4f";
+                    }
+                    return colorKate(dataById[d.id]); })
+        })
+    })
+}
 
 
 function updateKiranQuantitativeData(dataPath) {
@@ -232,8 +417,6 @@ function updateKiranQuantitativeData(dataPath) {
     })
 }
 
-console.log(data_template);
-console.log(data_country_to_id);
 function updateTerraQuantitativeData(dataPath) {
     d3.json("js/world_countries.json", function(data){
         d3.csv("data/" + dataPath, function(customData){
@@ -242,13 +425,18 @@ function updateTerraQuantitativeData(dataPath) {
 
             var dataById = data_template;
             customData.forEach(function(d) {
-                if (+d.values > max){
-                    max = +d.values;
+                if (d.values != "null") {
+                    if (+d.values > max) {
+                        max = +d.values;
+                    }
+                    if (+d.values < min) {
+                        min = +d.values;
+                    }
+                    dataById[data_country_to_id[d.Country]] = +d.values;
                 }
-                if (+d.values < min){
-                    min = +d.values;
+                else {
+                    console.log(d);
                 }
-                dataById[data_country_to_id[d.Country]] = +d.values;
             });
             console.log(dataById);
             data.features.forEach(function(d) { d.countries = dataById[d.id] });
@@ -269,8 +457,8 @@ function updateTerraQuantitativeData(dataPath) {
                 .attr("id","legend");
 
             var colorLegend = d3.legendColor()
-                .shapeWidth(30)
-                .shapeHeight(20)
+                .shapeWidth(50)
+                .shapeHeight(15)
                 .cells(11)
                 .orient("horizontal")
                 .scale(colorTerra);
@@ -286,7 +474,7 @@ function updateTerraQuantitativeData(dataPath) {
                 .transition()
                 .duration(300)
                 .style("fill", function(d){
-                    if (dataById[d.id] == null){
+                    if (dataById[d.id] == null || isNaN(dataById[d.id])){
                         return "#032c4f";
                     }
                     return colorTerra(dataById[d.id]); })
