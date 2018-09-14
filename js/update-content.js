@@ -84,7 +84,7 @@ function jenny() {
     images = [ 'Jenny1.png', 'Jenny2.png'];
 
     // Put your data file name here
-    datapath = "jenny_data.csv";
+    datapath = "Jenny_Data.csv";
 
     // Add your references, one per line in this format
     references = [
@@ -765,7 +765,7 @@ function updateTerraQuantitativeData(dataPath) {
             min = Math.pow(10, 1000);
             max = -Math.pow(10, 1000);
 
-            var dataById = data_template;
+            var dataById = {};
             customData.forEach(function(d) {
                 if (d.values != "null" && d.values != null) {
                     if (+d.values > max) {
@@ -776,19 +776,12 @@ function updateTerraQuantitativeData(dataPath) {
                     }
                     dataById[data_country_to_id[d.Country]] = +d.values;
                 }
-                else {
-                    console.log(d);
-                }
             });
             console.log(dataById);
             data.features.forEach(function(d) { d.countries = dataById[d.id] });
 
-
             colorTerra = d3.scaleLinear().domain([min,100])
-                // .interpolate(d3.interpolateHcl)
                 .range([d3.rgb("#F2F2F2"), d3.rgb('#e03b1a')]);
-
-          // console.log(dataById);
 
             $("#chart-legend").innerHTML = "";
 
@@ -814,6 +807,9 @@ function updateTerraQuantitativeData(dataPath) {
                 .transition()
                 .duration(300)
                 .style("fill", function(d){
+                    if (!(d.id in dataById)) {
+                        return "#032c4f";
+                    }
                     if (dataById[d.id] == null || isNaN(dataById[d.id])){
                         return "#032c4f";
                         console.log(d.id);
