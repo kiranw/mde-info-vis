@@ -80,7 +80,7 @@ function terra() {
 
 function jenny() {
     // put your images in the "img" folder
-    images = [ 'Jenny1.png', 'Jenny2.png'];
+    images = [ 'Jenny1.png', 'Jenny2.png', 'Jenny3.png'];
 
     // Put your data file name here
 
