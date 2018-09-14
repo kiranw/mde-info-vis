@@ -9,9 +9,9 @@ function carla() {
     console.log("called");
     // put your images in the "img" folder
     images = [
-        // "Carla1.png",
-        // "Carla2.png",
-        // "Carla3.png"
+        "Carla1.png",
+        "Carla2.png",
+        "Carla3.png"
     ];
 
 
@@ -151,7 +151,8 @@ function kate() {
     // put your images in the "img" folder
     images = [
         "Kate1.png",
-        // "Kate2.png"
+        "Kate2.png",
+        "Kate3.png"
     ];
 
     // Put your data file name here
