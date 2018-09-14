@@ -62,7 +62,7 @@ function terra() {
 
 function jenny() {
     // put your images in the "img" folder
-    images = [];
+    images = [ 'Jenny1.png', 'Jenny2.png'];
 
     // Put your data file name here
     datapath = "jenny_data.csv";
@@ -72,13 +72,14 @@ function jenny() {
         "'Statistics and Market Data about the Internet.' Statista, 2018. https://www.statista.com/markets/424/internet/",
         "'United Nations E-Government Development Database (UNeGovDD) Knowledgebase.' UN, 2018. https://publicadministration.un.org/egovkb/en-us/Data-Center",
         "'World Telecommunication/ICT Indicators Database.' International Telecommunications Union, July 2018. https://www.itu.int/en/ITU-D/Statistics/Pages/stat/default.aspx",
+        "Townsend, Anthony M. Smart Cities: Big Data, Civic Hackers, and the Quest for a New Utopia. New York: W.W. Norton & Company, 2014."
     ]
 
     // Update these fields and put them in quotes
     $("#chart-title").text("Distributed Governance of Digital Infrastructure");
     $("#section-title").text("Understanding the physical assets support the parallel digital world");
     $("#section-name").text("Jenny Fan");
-    $("#section-description").text("Description paragraph of your text");
+    $("#section-description").html("The backbone of the global digital world has always been supported by physical infrastructure residing in real locations. Despite its role as public utility, much of this ICT infrastructure is private, with a constantly shifting environment over common carriage, net neutrality, and governmental regulation.<br><br> In 2018, the barriers between the physical and the digital are more porous than ever. The modern individual maintains an increasingly curated digital identity and lives, communicates, and works as fluidly within their smart homes, offices, and vehicles as in their online communities. On a larger scale, cities scramble to fund and implement Smart City infrastructure projects while their streets are tested by private-sector solutions offering everything from connected streetlights to autonomous vehicles. By 2020, the sheer number of IoT devices would mean there are 4x more devices connected to the internet than humans.<br><br> We are at a turning point as society becomes ever more digitized and connected. Will the ICT model of the new smart city be public, private, or follow a commons model enabled by new forms of distributed collaboration and governance? How will we manage the distributed governance of that infrastructure in a 'phygital' world?");
 
     // Dont touch this stuff
     $("#section-images").html(generateImgHTML(images));
