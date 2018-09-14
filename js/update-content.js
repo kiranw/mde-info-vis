@@ -18,8 +18,8 @@ function carla() {
     // Add your references, one per line in this format
     references = [
         'Wittenstein, Matthew, Jesse Scott, and Noor Miza Muhamad Razali. Electricity Security across Borders. PDF. International Energy Agency, 2016.',
-        'Statistical Fact Sheet. PDF. European Network of Transmission System Operator of Electricity, May 4, 2018.',
         'Preqin Markets in Focus: Alternative Assets in Europe, June 2018 - Data Pack, Real Assets',
+        'Statistical Fact Sheet. PDF. European Network of Transmission System Operator of Electricity, May 4, 2018.'
     ]
 
     // Update these fields and put them in quotes
@@ -34,14 +34,12 @@ function carla() {
 
 
     // Put your data file name here
-    // updateSaifData("Carla_Data.tsv");
-    // Carla1 = Europe, Carla2 = World
     updateCarlaData("Carla1.csv");
     options = "<div id=\"section-options\"><form class=\"radioOptions\" action=\"\">"
     +
-        '<input type="radio" class="radio" id="carla1" onclick="updateCarlaData(\'Carla1.csv\',\'Europe: Energy import-export activity in Europe (GWh)\')\"> <label for="carla1" class="btn btn-secondary">Europe: Energy import-export activity in Europe (GWh)</label>'
+        '<input type="radio" class="radio" id="carla1" onclick="updateCarlaData(\'Carla1.csv\',\'Energy flow across European borders (GWh)\')\"> <label for="carla1" class="btn btn-secondary">Energy flow across European borders (GWh)</label>'
         +
-        '<input type="radio" class="radio" id="carla2" onclick="updateCarlaData(\'Carla2.csv\',\'Integration of renewable energy across the world (Mw)\')\"> <label for="carla2" class="btn btn-secondary">Integration of renewable energy across the world (Mw)</label>'
+        '<input type="radio" class="radio" id="carla2" onclick="updateCarlaData(\'Carla2.csv\',\'Integration of renewable energy globally (Mw)\')\"> <label for="carla2" class="btn btn-secondary">Integration of renewable energy globally (Mw)</label>'
         +
         "<br><br></form></div><br>";
 
