@@ -24,6 +24,12 @@ var svg = d3.select("#chart-container")
     .append("svg")
     .attr("width", width)
     .attr("height", height)
+    // zoom
+    .call(d3.zoom()
+        .scaleExtent([1,2])
+        .on("zoom", function () { svg.attr("transform", d3.event.transform) })
+      )
+    // regular appending
     .append('g')
     .attr('class', 'map');
 
