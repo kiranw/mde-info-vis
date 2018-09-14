@@ -38,9 +38,9 @@ function carla() {
     updateCarlaData("Carla1.csv");
     options = "<div id=\"section-options\"><form class=\"radioOptions\" action=\"\">"
     +
-        '<input type="radio" class="radio" id="carla1" onclick="updateCarlaData(\'Carla1.csv\')\"> <label for="carla1" class="btn btn-secondary">Energy flow across European borders (MW)</label>'
+        '<input type="radio" class="radio" id="carla1" onclick="updateCarlaData(\'Carla1.csv\')\"> <label for="carla1" class="btn btn-secondary">Europe: Energy import-export activity in Europe (GWh)</label>'
         +
-        '<input type="radio" class="radio" id="carla2" onclick="updateCarlaData(\'Carla2.csv\')\"> <label for="carla2" class="btn btn-secondary">Physical Energy Flows: (Imports - Exports) (GWh)</label>'
+        '<input type="radio" class="radio" id="carla2" onclick="updateCarlaData(\'Carla2.csv\')\"> <label for="carla2" class="btn btn-secondary">Integration of renewable energy across the world (Mw)</label>'
         +
         "<br><br></form></div><br>";
 
@@ -151,8 +151,8 @@ function kate() {
     // put your images in the "img" folder
     images = [
         "Kate1.png",
-        "Kate2.png",
-        "Kate3.png"
+        "Kate 2.png",
+        "Kate 3.png"
     ];
 
     // Put your data file name here
