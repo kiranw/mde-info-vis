@@ -18,7 +18,8 @@ function carla() {
     // Add your references, one per line in this format
     references = [
         'Wittenstein, Matthew, Jesse Scott, and Noor Miza Muhamad Razali. Electricity Security across Borders. PDF. International Energy Agency, 2016.',
-        'Statistical Fact Sheet. PDF. European Network of Transmission System Operator of Electricity, May 4, 2018.'
+        'Statistical Fact Sheet. PDF. European Network of Transmission System Operator of Electricity, May 4, 2018.',
+        'Preqin Markets in Focus: Alternative Assets in Europe, June 2018 - Data Pack, Real Assets',
     ]
 
     // Update these fields and put them in quotes
@@ -228,6 +229,11 @@ function kiran() {
     references = [
         '<a href="https://www.parlament.gv.at/PAKT/EU/XXVI/EU/00/55/EU_05523/imfname_10772510.pdf">https://www.parlament.gv.at/PAKT/EU/XXVI/EU/00/55/EU_05523/imfname_10772510.pdf</a>',
         'PNR: List of Member States who have decided to apply the Directive (EU) 2016/681 to intra-EU flights, Migration and Home Affairs, European Commission. 1 June, 2018, <a href="https://ec.europa.eu/home-affairs/news/list-member-states-applying-pnr-directive-intra-eu-flights_en">https://ec.europa.eu/home-affairs/news/list-member-states-applying-pnr-directive-intra-eu-flights_en</a>',
+        'Agreement between the United States of America and the European Union on the use and transfer of passenger name records to the United States Department of Homeland Security \n, Official Journal L 0215 , 11/08/2012 P. 5 - 0014, <a href="https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:22012A0811(01):EN:HTML">https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:22012A0811(01):EN:HTML</a>',
+        'Working Party on Information Exchange and Data Protection (DAPIX) Date: 18 October 2016 Time: 10.00 Venue: COUNCIL LEX BUILDING Rue de la Loi 145, 1048 BRUSSELS (118232/EU XXV.GP) <a href="https://www.parlament.gv.at/PAKT/VHG/XXV/EUBTG/EUBTG_08608/index.shtml">https://www.parlament.gv.at/PAKT/VHG/XXV/EUBTG/EUBTG_08608/index.shtml</a>',
+        'Directive (EU) 2016/681 of the European Parliament and of the Council of 27 April 2016 on the use of passenger name record (PNR) data for the prevention, detection, investigation and prosecution of terrorist offences and serious crime\n' +
+        'OJ L 119, 4.5.2016, <a href="https://publications.europa.eu/en/publication-detail/-/publication/2ba036c2-11bd-11e6-ba9a-01aa75ed71a1/language-en">https://publications.europa.eu/en/publication-detail/-/publication/2ba036c2-11bd-11e6-ba9a-01aa75ed71a1/language-en</a>',
+        'The Passenger Name Record Data and Miscellaneous Amendments Regulations 2018, 2018 No. 598, 16 May, 2018, <a href="http://www.legislation.gov.uk/uksi/2018/598/made">http://www.legislation.gov.uk/uksi/2018/598/made</a>'
     ]
 
     // Update these fields and put them in quotes
