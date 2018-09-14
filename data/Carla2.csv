@@ -1,0 +1,200 @@
+id,name,Energy flow across European borders (MW)
+CHN,China,545206
+IND,India,90748
+USA,United States,214766
+IDN,Indonesia,8682
+BRA,Brazil,122951
+PAK,Pakistan,8595
+BGD,Bangladesh,425
+NGA,Nigeria,2062
+RUS,Russia,51747
+JPN,Japan,71809
+MEX,Mexico,18301
+PHL,Philippines,6496
+VNM,Vietnam,17973
+ETH,Ethiopia,4188
+DEU,Germany,105839
+EGY,Egypt,3660
+TUR,Turkey,34083
+COD,"Congo, Democratic Republic of the",2579
+IRN,Iran ,10606
+THA,Thailand,8650
+FRA,France,44666
+GBR,United Kingdom,33544
+ITA,Italy,51485
+ZAF,South Africa,4064
+KOR,"Korea, South",10087
+UKR,Ukraine,6225
+COL,Colombia,11862
+SDN,Sudan,1793
+TZA,Tanzania,659
+ARG,Argentina,10043
+ESP,Spain,47954
+KEN,Kenya,2057
+POL,Poland,7930
+DZA,Algeria,536
+CAN,Canada,96636
+UGA,Uganda,796
+MAR,Morocco,2309
+PER,Peru,5228
+IRQ,Iraq,2291
+SAU,Saudi Arabia,48
+AFG,Afghanistan,296
+NPL,Nepal,934
+UZB,Uzbekistan,1763
+VEN,Venezuela,15190
+MYS,Malaysia,6963
+GHA,Ghana,1612
+YEM,Yemen,30
+PRK,"Korea, North",5768
+SYR,Syria,1572
+ROU,Romania,11264
+MOZ,Mozambique,2200
+AUS,Australia,18091
+LKA,Sri Lanka,1859
+MDG,Madagascar,175
+CIV,Cote d'Ivoire,604
+CMR,Cameroon,730
+NLD,Netherlands,7122
+CHL,Chile,10140
+BFA,Burkina Faso,42
+NER,Niger,8
+KAZ,Kazakhstan,2855
+MWI,Malawi,373
+ECU,Ecuador,4602
+KHM,Cambodia,963
+SEN,Senegal,157
+MLI,Mali,190
+GTM,Guatemala,2662
+AGO,Angola,936
+ZMB,Zambia,2436
+ZWE,Zimbabwe,898
+CUB,Cuba,631
+RWA,Rwanda,109
+GRC,Greece,8435
+PRT,Portugal,12534
+TUN,Tunisia,348
+TCD,Chad,1
+BEL,Belgium,6696
+GIN,Guinea,370
+BOL,Bolivia,635
+HUN,Hungary,1171
+BDI,Burundi,59
+BLR,Belarus,132
+HTI,Haiti,55
+SWE,Sweden,27835
+BEN,Benin,6
+AZE,Azerbaijan,1172
+AUT,Austria,18522
+HND,Honduras,1455
+CHE,Switzerland,15195
+TJK,Tajikistan,4638
+ISR,Israel,852
+SRB,Serbia,2441
+BGR,Bulgaria,4151
+LBY,Libya,5
+JOR,Jordan,493
+PRY,Paraguay,8810
+TGO,Togo,69
+PNG,Papua New Guinea,331
+SLV,El Salvador,1050
+NIC,Nicaragua,670
+ERI,Eritrea,1
+DNK,Denmark,7342
+KGZ,Kyrgyzstan,2955
+SVK,Slovakia,2419
+FIN,Finland,7067
+SLE,Sierra Leone,88
+ARE,United Arab Emirates,139
+CAF,Central African Republic,19
+SGP,Singapore,254
+NOR,Norway,32746
+BIH,Bosnia and Herzegovina,1742
+GEO,Georgia,2898
+CRI,Costa Rica,2900
+HRV,Croatia,2740
+MDA,Moldova,70
+NZL,New Zealand,7114
+IRL,Ireland,3359
+COG,"Congo, Republic of the",216
+LBN,Lebanon,303
+PRI,Puerto Rico,361
+LBR,Liberia,26
+ALB,Albania,2034
+LTU,Lithuania,757
+URY,Uruguay,3259
+PAN,Panama,2005
+MRT,Mauritania,117
+MNG,Mongolia,85
+OMN,Oman,1
+ARM,Armenia,1303
+JAM,Jamaica,187
+KWT,Kuwait,41
+LVA,Latvia,1787
+NAM,Namibia,364
+MKD,Macedonia,716
+BWA,Botswana,2
+SVN,Slovenia,1441
+LSO,Lesotho,75
+KWT,Kosovo,55
+GNB,Guinea-Bissau,0
+GAB,Gabon,330
+SWZ,Swaziland,186
+153,Mauritius,170
+EST,Estonia,619
+TTO,Trinidad and Tobago,3
+TLS,Timor-Leste,0
+CYP,Cyprus,250
+FJI,Fiji,218
+QAT,Qatar,44
+160,Comoros,1
+GUY,Guyana,44
+DJI,Djibouti,0
+163,Bahrain,6
+BTN,Bhutan,1614
+MNE,Montenegro,674
+GNQ,Equatorial Guinea,127
+SLB,Solomon Islands,3
+LUX,Luxembourg,244
+SUR,Suriname,188
+173,Malta,85
+174,Maldives,4
+BRN,Brunei,1
+BLZ,Belize,89
+BHS,"Bahamas, The",1
+ISL,Iceland,2655
+179,French Polynesia,75
+180,Barbados,19
+181,Mayotte,13
+NCL,New Caledonia,121
+VUT,Vanuatu,8
+185,Samoa,20
+186,Sao Tome and Principe,2
+187,Saint Lucia,1
+188,Tonga,3
+189,Virgin Islands,4
+190,Grenada,1
+191,"Micronesia, Federated States of",1
+192,Aruba,38
+193,Saint Vincent and the Grenadines,7
+194,Kiribati,3
+196,Seychelles,8
+197,Antigua and Barbuda,4
+DOM,Dominica,7
+202,American Samoa,1
+203,Marshall Islands,2
+207,Saint Kitts and Nevis,4
+208,Faroe Islands,59
+215,British Virgin Islands,1
+217,Palau,1
+221,Anguilla,2
+222,Nauru,1
+223,Cook Islands,3
+224,Tuvalu,1
+227,Saint Pierre and Miquelon,1
+FLK,Falkland Islands (Islas Malvinas),3
+233,Tokelau,1
+234,Niue,0
+SDS,South Sudan,0
+ABV,Somaliland,4
+OSA,Kosovo,55
