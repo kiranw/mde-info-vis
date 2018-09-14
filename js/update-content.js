@@ -69,7 +69,10 @@ function terra() {
 
 function jenny() {
     // put your images in the "img" folder
-    images = ["Jenny1.png","Jenny2.png"];
+    images = [ 'Jenny1.png', 'Jenny2.png'];
+
+    // Put your data file name here
+    datapath = "jenny_data.csv";
 
     // Add your references, one per line in this format
     references = [
@@ -247,6 +250,7 @@ function generateReferenceHTML(references) {
 
 
 function updateJennyData(dataPath, columnName){
+    $("#chart-title").text(columnName);
     console.log("gettinghere");
     console.log(columnName);
     $("#chart-legend").html("");
@@ -308,7 +312,7 @@ function updateJennyData(dataPath, columnName){
                 .attr("id","legend");
 
             var colorLegend = d3.legendColor()
-                .shapeWidth(50)
+                .shapeWidth(80)
                 .shapeHeight(15)
                 .cells(11)
                 .orient("horizontal")
@@ -527,7 +531,6 @@ function updateKateData(dataPath) {
 
 
             colorKate = d3.scaleLinear().domain([0,100])
-            // .interpolate(d3.interpolateHcl)
                 .range([d3.rgb("#F2F2F2"), d3.rgb('#e03b1a')]);
 
             console.log(dataById);
