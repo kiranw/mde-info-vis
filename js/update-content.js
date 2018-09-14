@@ -84,7 +84,7 @@ function jenny() {
     images = [ 'Jenny1.png', 'Jenny2.png'];
 
     // Put your data file name here
-    datapath = "Jenny_Data.csv";
+
 
     // Add your references, one per line in this format
     references = [
@@ -106,7 +106,7 @@ function jenny() {
 
     // Put your data file name here
     $("#section-description").prepend("<div id='options'></div>");
-    datapath = "jenny_data.csv";
+    datapath = "Jenny_Data.csv";
     updateJennyData(datapath, "Telecommunication Infrastructure Index");
 }
 
