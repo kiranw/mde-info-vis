@@ -218,7 +218,8 @@ function kiran() {
         "Kiran1.png",
         "Kiran2.png",
         "Kiran3.png",
-        "Kiran4.png"
+        "Kiran4.png",
+        "Kiran5.png"
     ];
 
     // Put your data file name here
