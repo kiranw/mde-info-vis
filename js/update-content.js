@@ -9,6 +9,9 @@ function carla() {
     console.log("called");
     // put your images in the "img" folder
     images = [
+        // "Carla1.png",
+        // "Carla2.png",
+        // "Carla3.png"
     ];
 
     // Put your data file name here
@@ -17,12 +20,13 @@ function carla() {
 
     // Add your references, one per line in this format
     references = [
-        "reference 1",
+        'Wittenstein, Matthew, Jesse Scott, and Noor Miza Muhamad Razali. Electricity Security across Borders. PDF. International Energy Agency, 2016.',
+        'Statistical Fact Sheet. PDF. European Network of Transmission System Operator of Electricity, May 4, 2018.'
     ]
 
     // Update these fields and put them in quotes
-    $("#chart-title").text("Global Values (GWh)");
-    $("#section-title").text("Title of your thing");
+    $("#chart-title").text("Integration of Renewable Energy Globally (GWh)");
+    $("#section-title").text("Between blurred and enforced borders");
     $("#section-name").text("Carla Saad");
     $("#section-description").text("Description paragraph of your text");
 
@@ -35,6 +39,8 @@ function carla() {
 function terra() {
     // put your images in the "img" folder
     images = [
+        // "Terra1.png",
+        // "Terra2.png",
     ];
 
     // Put your data file name here
@@ -50,10 +56,11 @@ function terra() {
     ]
 
     // Update these fields and put them in quotes
-    $("#chart-title").text("Percentages of Adults who Reported owning a Smart Phone")
-    $("#section-title").text("Smartphone Usage, Globally");
+    $("#chart-title").text("Global Smart Phone Usage: Percentages of Adults who Reported owning a Smart Phone")
+    $("#section-title").text("Reevaluating how we physically connect to the digital world");
     $("#section-name").text("Terra Moran");
-    $("#section-description").text("Description paragraph of your text");
+    $("#section-description").html("<p>New technologies (notably, the smart phone) have led to an unsurmountable amount of information that is almost always easily accessible. This has transformed society in many positive ways, but it also means that the average American will spend 5 hours a day on a mobile device.</p>" +
+        "<p>Is this constant connectivity a problem, or is it all positive? Is there a desire to spend less time on devices? Is there a way to stay connected, but not distracted?</p>");
 
     // Dont touch this stuff
     $("#section-images").html(generateImgHTML(images));
@@ -62,33 +69,41 @@ function terra() {
 
 function jenny() {
     // put your images in the "img" folder
-    images = [];
-
-    // Put your data file name here
-    datapath = "jenny_data.csv";
+    images = ["Jenny1.png","Jenny2.png"];
 
     // Add your references, one per line in this format
     references = [
         "'Statistics and Market Data about the Internet.' Statista, 2018. https://www.statista.com/markets/424/internet/",
         "'United Nations E-Government Development Database (UNeGovDD) Knowledgebase.' UN, 2018. https://publicadministration.un.org/egovkb/en-us/Data-Center",
         "'World Telecommunication/ICT Indicators Database.' International Telecommunications Union, July 2018. https://www.itu.int/en/ITU-D/Statistics/Pages/stat/default.aspx",
+        'Townsend, Anthony M. ""Smart Cities: Big Data, Civic Hackers, and the Quest for a New Utopia."" New York: W.W. Norton & Company, 2014."'
     ]
 
     // Update these fields and put them in quotes
     $("#chart-title").text("Distributed Governance of Digital Infrastructure");
     $("#section-title").text("Understanding the physical assets support the parallel digital world");
     $("#section-name").text("Jenny Fan");
-    $("#section-description").text("Description paragraph of your text");
+    $("#section-description").html("<p>The backbone of the global digital world has always been supported by physical infrastructure residing in real locations. Despite its role as public utility, much of this ICT infrastructure is private, with a constantly shifting environment over common carriage, net neutrality, and governmental regulation.</p>" +
+        "<p>In 2018, the barriers between the physical and the digital are more porous than ever. The modern individual maintains an increasingly curated digital identity and lives, communicates, and works as fluidly within their smart homes, offices, and vehicles as in their online communities. On a larger scale, cities scramble to fund and implement Smart City infrastructure projects while their streets are tested by private-sector solutions offering everything from connected streetlights to autonomous vehicles. By 2020, the sheer number of IoT devices would mean there are 4x more devices connected to the internet than humans.</p>" +
+        "<p>We are at a turning point as society becomes ever more digitized and connected. Will the ICT model of the new smart city be public, private, or follow a commons model enabled by new forms of distributed collaboration and governance? How will we manage the distributed governance of that infrastructure in a “phygital” world?</p>");
 
     // Dont touch this stuff
     $("#section-images").html(generateImgHTML(images));
     $("#section-references").html(generateReferenceHTML(references));
+
+    // Put your data file name here
+    $("#section-description").prepend("<div id='options'></div>");
+    datapath = "jenny_data.csv";
+    updateJennyData(datapath, "Population (2018 est)");
 }
 
 
 function saif() {
     // put your images in the "img" folder
-    images = [];
+    images = [
+        // "Saif1.png",
+        // "Saif2.png"
+    ];
 
     // Put your data file name here
     datapath = "Saif_Data.tsv";
@@ -96,16 +111,16 @@ function saif() {
 
     // Add your references, one per line in this format
     references = [
-        "reference 1",
-        "reference 2",
-        "reference 3",
+        '"Ancestry and Development: New Evidence Journal of Applied Econometrics, vol. 33, no. 5, August 2018, pp. 748-762.',
+        'Culture, Ethnicity and Diversity American Economic Review, vol. 107, no. 9, September 2017, pp. 2479-2513.',
+        'The Diffusion of Institutions Wilson, D. S. and A. Kirman, eds. Complexity and Evolution: Toward a New Synthesis for Economics. Strüngmann Forum Reports, vol. 19, chapter 9, pp. 147-166. Cambridge, MA: The MIT Press, 2016."'
     ]
 
     // Update these fields and put them in quotes
-    $("#chart-title").text("Chart title");
-    $("#section-title").text("Title of your thing");
+    $("#chart-title").text("Genetic Distance of Countries (To USA)");
+    $("#section-title").text("Catallaxy: A Market Place of Ideas");
     $("#section-name").text("Saif Haobsh");
-    $("#section-description").text("Description paragraph of your text");
+    $("#section-description").text('Catallaxy presents a “market-place of ideas” to understand how information is dispersed or restrained in relation to geographic, genetic, linguistic, and ideological phenomenologies. Layering notions of instutional ontogeny, technological development, geo-political activity, and economic growth, the project seeks to formulate a robust basis for negotiating social plurality.');
 
     // Dont touch this stuff
     $("#section-images").html(generateImgHTML(images));
@@ -116,7 +131,10 @@ function saif() {
 
 function kate() {
     // put your images in the "img" folder
-    images = [];
+    images = [
+        // "Kate1.png",
+        // "Kate2.png"
+    ];
 
     // Put your data file name here
     datapath = "Kate_Data.tsv";
@@ -128,10 +146,10 @@ function kate() {
     ]
 
     // Update these fields and put them in quotes
-    $("#chart-title").text("Global Internet Penetration Rates");
-    $("#section-title").text("Title of your thing");
+    $("#chart-title").text("Global Internet Penetration Rates (by % of population)");
+    $("#section-title").text("Amorphous Data Relationships");
     $("#section-name").text("Kate Spies");
-    $("#section-description").text("Description paragraph of your text");
+    $("#section-description").text("In 2016 the United Nations Human Rights Council declared the ‘promotion, protection and enjoyment of human rights on the Internet’ a fundamental freedom. The ability to access the internet is no longer a luxury, but rather a commodity, and as the volume and depth of personal data collection and surveillance grows, the terms of the relationship become critically important. What data is collected, what data is surveilled, how is the data shared, and what control do I have over dissemination and derived-profits? Uncertain data relationships are consciously and sub-consciously navigated at each click, how might we commit to a more equanimous exchange for all players?text");
 
     // Dont touch this stuff
     $("#section-images").html(generateImgHTML(images));
@@ -170,7 +188,10 @@ function janet() {
 
 function kiran() {
     // put your images in the "img" folder
-    images = [];
+    images = [
+        // "Kiran1.png",
+        // "Kiran2.png"
+    ];
 
     // Put your data file name here
     datapath = "kiran_data.csv";
@@ -223,6 +244,92 @@ function generateReferenceHTML(references) {
 
 
 
+
+
+function updateJennyData(dataPath, columnName){
+    console.log("gettinghere");
+    console.log(columnName);
+    $("#chart-legend").html("");
+    d3.json("js/world_countries.json", function(data){
+        d3.csv("data/" + dataPath, function(customData) {
+            console.log(customData[0][columnName]);
+            totalColumns = Object.keys(customData[0]).length;
+            var columnNames = Object.keys(customData[0]).slice(3, totalColumns);
+
+            optionsPrefix = "<div id=\"section-options\"><form action=\"\">";
+            radioPrefix = '<input type="radio" class="radio" name="jenny" value="';
+            radioMid = '" onclick="updateJennyData(\'Jenny_Data.csv\',\'';
+            radioSuffix = '\')">';
+            optionsSuffix = "</form></div>";
+
+            optionsHTML = optionsPrefix;
+
+            columnNames.forEach(function(c){
+                optionsHTML += radioPrefix + c + radioMid + c + radioSuffix + c + "<br><br>"
+            })
+            optionsHTML += optionsSuffix;
+
+            $("#options").html(optionsHTML);
+
+
+
+            // mapping
+            min = Math.pow(10, 1000);
+            max = -Math.pow(10, 1000);
+
+            var dataById = data_template;
+            customData.forEach(function(d) {
+                if (d[columnName] != null) {
+                    d[columnName] = d[columnName].replace('%','');
+                    if (+d[columnName] > max) {
+                        max = +d[columnName];
+                    }
+                    if (+d[columnName] < min) {
+                        min = +d[columnName];
+                    }
+                    dataById[data_country_to_id[d.name]] = +d[columnName];
+                }
+            });
+            console.log(dataById);
+            data.features.forEach(function(d) { d.countries = dataById[d.id] });
+
+
+            colorSaif = d3.scaleLinear().domain([min,max])
+                .range([d3.rgb("#F2F2F2"), d3.rgb('#e03b1a')]);
+
+            console.log(dataById);
+
+            $("#chart-legend").innerHTML = "";
+
+            var legendsvg = d3.select("#chart-legend")
+                .append("svg")
+                .attr("height", 40)
+                .attr("width", 800)
+                .attr("id","legend");
+
+            var colorLegend = d3.legendColor()
+                .shapeWidth(50)
+                .shapeHeight(15)
+                .cells(11)
+                .orient("horizontal")
+                .scale(colorSaif);
+
+            legendsvg.append("g")
+                .attr("class", "legendLinear")
+                .attr("color", "white")
+                .call(colorLegend);
+
+            d3.selectAll(".country")
+                .transition()
+                .duration(300)
+                .style("fill", function(d){
+                    if (dataById[d.id] == null || isNaN(dataById[d.id])){
+                        return "#032c4f";
+                    }
+                    return colorSaif(dataById[d.id]); });
+        });
+    });
+}
 
 
 
@@ -484,7 +591,7 @@ function updateTerraQuantitativeData(dataPath) {
 
             var dataById = data_template;
             customData.forEach(function(d) {
-                if (d.values != "null") {
+                if (d.values != "null" && d.values != null) {
                     if (+d.values > max) {
                         max = +d.values;
                     }
@@ -527,14 +634,13 @@ function updateTerraQuantitativeData(dataPath) {
                 .attr("color", "white")
                 .call(colorLegend);
 
-
-
             d3.selectAll(".country")
                 .transition()
                 .duration(300)
                 .style("fill", function(d){
                     if (dataById[d.id] == null || isNaN(dataById[d.id])){
                         return "#032c4f";
+                        console.log(d.id);
                     }
                     return colorTerra(dataById[d.id]); })
         })

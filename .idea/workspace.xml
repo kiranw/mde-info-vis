@@ -2,6 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bab2a731-326e-45c7-baf1-f84394fd6750" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Carla_Data.tsv" afterPath="$PROJECT_DIR$/data/Carla_Data.tsv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Jenny_Data.csv" afterPath="$PROJECT_DIR$/data/Jenny_Data.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/update-content.js" afterPath="$PROJECT_DIR$/js/update-content.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -19,8 +24,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="43" column="28" lean-forward="true" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
+            <state relative-caret-position="279">
+              <caret line="31" column="123" lean-forward="false" selection-start-line="31" selection-start-column="123" selection-end-line="31" selection-end-column="123" />
               <folding />
             </state>
           </provider>
@@ -29,8 +34,8 @@
       <file leaf-file-name="Jenny_Data.csv" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/Jenny_Data.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="163">
+              <caret line="164" column="1" lean-forward="false" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -39,8 +44,8 @@
       <file leaf-file-name="update-content.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/update-content.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="94" column="39" lean-forward="true" selection-start-line="94" selection-start-column="39" selection-end-line="94" selection-end-column="39" />
+            <state relative-caret-position="359">
+              <caret line="273" column="0" lean-forward="true" selection-start-line="273" selection-start-column="0" selection-end-line="273" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -49,8 +54,8 @@
       <file leaf-file-name="Carla_Data.tsv" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/Carla_Data.tsv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="18" lean-forward="false" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
+            <state relative-caret-position="289">
+              <caret line="148" column="14" lean-forward="true" selection-start-line="148" selection-start-column="14" selection-end-line="148" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -70,8 +75,12 @@
         <entry file="file://$PROJECT_DIR$/js/chart.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="149">
-              <caret line="59" column="53" lean-forward="false" selection-start-line="59" selection-start-column="53" selection-end-line="59" selection-end-column="53" />
-              <folding />
+              <caret line="60" column="53" lean-forward="false" selection-start-line="60" selection-start-column="53" selection-end-line="60" selection-end-column="53" />
+              <folding>
+                <marker date="1536890355969" expanded="true" signature="174:374" ph="{...}" />
+                <marker date="1536890355969" expanded="true" signature="2249:2434" ph="{...}" />
+                <marker date="1536890355969" expanded="true" signature="2471:2661" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -86,11 +95,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Terra_Data.tsv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/Terra_Data.tsv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="163">
+              <caret line="163" column="10" lean-forward="false" selection-start-line="163" selection-start-column="4" selection-end-line="163" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="30" column="22" lean-forward="true" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+            <state relative-caret-position="30">
+              <caret line="2" column="29" lean-forward="true" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -112,7 +131,6 @@
       <find>chart</find>
       <find>chartit</find>
       <find>Germ</find>
-      <find>kate</find>
       <find>.shapeWidt</find>
       <find>.shapeHeight</find>
       <find>.shapeWidth</find>
@@ -120,7 +138,13 @@
       <find>color</find>
       <find>malaria</find>
       <find>legend</find>
+      <find>norway</find>
       <find>saif(</find>
+      <find>reference</find>
+      <find>personal</find>
+      <find>Personal</find>
+      <find>Public</find>
+      <find>kate</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -139,11 +163,12 @@
         <option value="$PROJECT_DIR$/data/Kate_Data.tsv" />
         <option value="$PROJECT_DIR$/data/Saif_Data.tsv" />
         <option value="$PROJECT_DIR$/data/Janet_Data.tsv" />
-        <option value="$PROJECT_DIR$/data/Carla_Data.tsv" />
         <option value="$PROJECT_DIR$/js/chart.js" />
-        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/data/Carla_Data.tsv" />
         <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/data/Jenny_Data.csv" />
         <option value="$PROJECT_DIR$/js/update-content.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -234,12 +259,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1536801973041</updated>
-      <workItem from="1536801975555" duration="17739000" />
+      <workItem from="1536801975555" duration="22484000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17739000" />
+    <option name="totallyTimeSpent" value="22484000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -290,14 +315,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/test-data.tsv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6990">
-          <caret line="466" column="17" lean-forward="true" selection-start-line="466" selection-start-column="17" selection-end-line="466" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/Kate_Data.tsv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-95">
@@ -322,50 +339,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/Carla_Data.tsv">
+    <entry file="file://$PROJECT_DIR$/js/chart.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="18" lean-forward="false" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
+        <state relative-caret-position="149">
+          <caret line="60" column="53" lean-forward="false" selection-start-line="60" selection-start-column="53" selection-end-line="60" selection-end-column="53" />
+          <folding>
+            <marker date="1536890355969" expanded="true" signature="174:374" ph="{...}" />
+            <marker date="1536890355969" expanded="true" signature="2249:2434" ph="{...}" />
+            <marker date="1536890355969" expanded="true" signature="2471:2661" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/test-data.tsv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6990">
+          <caret line="466" column="17" lean-forward="true" selection-start-line="466" selection-start-column="17" selection-end-line="466" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/chart.js">
+    <entry file="file://$PROJECT_DIR$/data/Terra_Data.tsv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="59" column="53" lean-forward="false" selection-start-line="59" selection-start-column="53" selection-end-line="59" selection-end-column="53" />
+        <state relative-caret-position="163">
+          <caret line="163" column="10" lean-forward="false" selection-start-line="163" selection-start-column="4" selection-end-line="163" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Carla_Data.tsv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="148" column="14" lean-forward="true" selection-start-line="148" selection-start-column="14" selection-end-line="148" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="30" column="22" lean-forward="true" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+        <state relative-caret-position="30">
+          <caret line="2" column="29" lean-forward="true" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/Jenny_Data.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="163">
+          <caret line="164" column="1" lean-forward="false" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="43" column="28" lean-forward="true" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
+        <state relative-caret-position="279">
+          <caret line="31" column="123" lean-forward="false" selection-start-line="31" selection-start-column="123" selection-end-line="31" selection-end-column="123" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/update-content.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="94" column="39" lean-forward="true" selection-start-line="94" selection-start-column="39" selection-end-line="94" selection-end-column="39" />
+        <state relative-caret-position="359">
+          <caret line="273" column="0" lean-forward="true" selection-start-line="273" selection-start-column="0" selection-end-line="273" selection-end-column="0" />
           <folding />
         </state>
       </provider>
