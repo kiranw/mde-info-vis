@@ -34,10 +34,14 @@ function carla() {
 
     // Put your data file name here
     // updateSaifData("Carla_Data.tsv");
+    // Carla1 = Europe, Carla2 = World
     updateCarlaData("Carla1.csv");
-    options = "<div id=\"section-options\"><form class=\"radioOptions\" action=\"\">" +
-        '<input type="radio" class="radio" id="carla1" name="carla" onclick="updateCarlaData(\'Carla1.csv\')\"> <label for="carla1" class="btn btn-secondary">Physical Energy Flows - (Imports - Exports) (GWh)</label>' +
-        '<br><input type="radio" class="radio" id="carla2" name="carla" onclick="updateCarlaData(\'Carla2.csv\')\"> <label for="carla2" class="btn btn-secondary">Energy flow across European borders (MW)</label>' +
+    options = "<div id=\"section-options\"><form class=\"radioOptions\" action=\"\">"
+    +
+        '<input type="radio" class="radio" id="carla1" onclick="updateCarlaData(\'Carla1.csv\')\"> <label for="carla1" class="btn btn-secondary">Energy flow across European borders (MW)</label>'
+        +
+        '<input type="radio" class="radio" id="carla2" onclick="updateCarlaData(\'Carla2.csv\')\"> <label for="carla2" class="btn btn-secondary">Physical Energy Flows: (Imports - Exports) (GWh)</label>'
+        +
         "<br><br></form></div><br>";
 
     $("#section-description").prepend("<div id='options'></div>");
@@ -66,7 +70,7 @@ function terra() {
     $("#chart-title").text("Global Smart Phone Usage: Percentages of Adults who Reported owning a Smart Phone")
     $("#section-title").text("Reevaluating how we physically connect to the digital world");
     $("#section-name").text("Terra Moran");
-    $("#section-description").html("<p>New technologies (notably, the smart phone) have led to an unsurmountable amount of information that is almost always easily accessible.This has transformed society in many positive ways, but it also means that the average American will spend 5 hours a day on a mobile device. </p><p>Is this constant connectivity a problem, or is it entirely positive? Is there even a desire to spend less time on devices? Can we create a better design for when and how we recieve information, or a new way to stay connected, but not distracted?</p>");
+    $("#section-description").html("<p>New technologies (notably, the smart phone) have led to an unsurmountable amount of information that is almost always easily accessible. This has transformed society in many positive ways, but it also means that the average American will spend 5 hours a day on a mobile device.</p><p>Is this constant connectivity a problem, or is it entirely positive? Is there even a desire to spend less time on devices? Can we create a better design for when and how we recieve information, or a new way to stay connected, but not distracted?</p>");
 
     // Dont touch this stuff
     $("#section-images").html(generateImgHTML(images));
@@ -349,11 +353,14 @@ function updateJennyData(dataPath, columnName){
 
 function updateCarlaData(dataPath){
     $("#chart-legend").html("");
+
     d3.json("js/world_countries.json", function(data){
         d3.csv("data/" + dataPath, function(customData){
             min = Math.pow(10, 1000);
             max = -Math.pow(10, 1000);
             var columnName = Object.keys(customData[0])[2];
+            console.log(dataPath, columnName);
+
             $("#chart-title").html(columnName);
 
             var dataById = data_template;
@@ -368,14 +375,14 @@ function updateCarlaData(dataPath){
                     dataById[data_country_to_id[d.name]] = +d[columnName];
                 }
             });
-            console.log(dataById);
+            // console.log(dataById);
             data.features.forEach(function(d) { d.countries = dataById[d.id] });
 
 
             colorSaif = d3.scaleLinear().domain([min,max])
                 .range([d3.rgb("#F2F2F2"), d3.rgb('#e03b1a')]);
 
-            console.log(dataById);
+            // console.log(dataById);
 
             $("#chart-legend").innerHTML = "";
 
@@ -428,14 +435,14 @@ function updateSaifData(dataPath) {
                     dataById[data_country_to_id[d.name]] = +d.values;
                 }
             });
-            console.log(dataById);
+            // console.log(dataById);
             data.features.forEach(function(d) { d.countries = dataById[d.id] });
 
 
             colorSaif = d3.scaleLinear().domain([min,max])
                 .range([d3.rgb("#F2F2F2"), d3.rgb('#e03b1a')]);
 
-            console.log(dataById);
+            // console.log(dataById);
 
             $("#chart-legend").innerHTML = "";
 
@@ -488,14 +495,14 @@ function updateSaifMultiplierData(dataPath){
                     dataById[data_country_to_id[d.name]] = +d.values*100;
                 }
             });
-            console.log(dataById);
+            // console.log(dataById);
             data.features.forEach(function(d) { d.countries = dataById[d.id] });
 
 
             colorSaif = d3.scaleLinear().domain([min,max])
                 .range([d3.rgb("#F2F2F2"), d3.rgb('#e03b1a')]);
 
-            console.log(dataById);
+            // console.log(dataById);
 
             $("#chart-legend").innerHTML = "";
 
@@ -543,14 +550,14 @@ function updateSaifDataMinMax(dataPath, min, max){
                     dataById[data_country_to_id[d.name]] = +d.values;
                 }
             });
-            console.log(dataById);
+            // console.log(dataById);
             data.features.forEach(function(d) { d.countries = dataById[d.id] });
 
 
             colorSaif = d3.scaleLinear().domain([0,100])
                 .range([d3.rgb("#F2F2F2"), d3.rgb('#e03b1a')]);
 
-            console.log(dataById);
+            // console.log(dataById);
 
             $("#chart-legend").innerHTML = "";
 
@@ -596,14 +603,14 @@ function updateKateData(dataPath) {
             customData.forEach(function(d) {
                 dataById[data_country_to_id[d.name]] = +d.values;
             });
-            console.log(dataById);
+            // console.log(dataById);
             data.features.forEach(function(d) { d.countries = dataById[d.id] });
 
 
             colorKate = d3.scaleLinear().domain([0,100])
                 .range([d3.rgb("#F2F2F2"), d3.rgb('#e03b1a')]);
 
-            console.log(dataById);
+            // console.log(dataById);
 
             $("#chart-legend").innerHTML = "";
 
@@ -646,7 +653,7 @@ function updateKiranQuantitativeData(dataPath) {
             customData.forEach(function(d) { dataById[d.id] = +d.countries; });
             data.features.forEach(function(d) { d.countries = dataById[d.id] });
 
-            console.log(dataById);
+            // console.log(dataById);
 
             d3.selectAll(".country")
                 .transition()
@@ -685,7 +692,7 @@ function updateTerraQuantitativeData(dataPath) {
                 // .interpolate(d3.interpolateHcl)
                 .range([d3.rgb("#F2F2F2"), d3.rgb('#e03b1a')]);
 
-            console.log(dataById);
+          // console.log(dataById);
 
             $("#chart-legend").innerHTML = "";
 
