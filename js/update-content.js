@@ -49,18 +49,15 @@ function terra() {
 
     // Add your references, one per line in this format
     references = [
-        "Pew Research, <a href='http://assets.pewresearch.org/wp-content/uploads/sites/2/2018/06/15135408/Pew-Research-Center_Global-Tech-Social-Media-Use_2018.06.19.pdf'>http://assets.pewresearch.org/wp-content/uploads/sites/2/2018/06/15135408/Pew-Research-Center_Global-Tech-Social-Media-Use_2018.06.19.pdf</a>",
-        "Pew Research, <a href='http://www.pewinternet.org/dataset/jan-3-10-2018-core-trends-survey/Pew Research'>http://www.pewinternet.org/dataset/jan-3-10-2018-core-trends-survey/Pew Research</a>",
-        "Pew Research, <a href='http://assets.pewresearch.org/wp-content/uploads/sites/2/2018/06/15135408/Pew-Research-Center_Global-Tech-Social-Media-Use_2018.06.19.pdf'>http://assets.pewresearch.org/wp-content/uploads/sites/2/2018/06/15135408/Pew-Research-Center_Global-Tech-Social-Media-Use_2018.06.19.pdf</a>",
-        "Pew Research, <a href='http://www.pewinternet.org/dataset/jan-3-10-2018-core-trends-survey/'>http://www.pewinternet.org/dataset/jan-3-10-2018-core-trends-survey/</a>"
+      'Pew Research Center. June, 2018. “Social Media Use Continues To Rise in Developing Countries, but Plateaus Across Developed Ones”. <a href="http://assets.pewresearch.org/wp-content/uploads/sites/2/2018/06/15135408/Pew-Research-Center_Global-Tech-Social-Media-Use_2018.06.19.pdf">http://assets.pewresearch.org/wp-content/uploads/sites/2/2018/06/15135408/Pew-Research-Center_Global-Tech-Social-Media-Use_2018.06.19.pdf</a>',
+      'Flurrymobile. "Flurry State of Mobile 2017: With Captive Mobile Audiences, New App Growth Stagnates." Flurry Blog. January 10, 2018. Accessed September 14, 2018. <a href="http://flurrymobile.tumblr.com/post/169545749110/state-of-mobile-2017-mobile-stagnates">http://flurrymobile.tumblr.com/post/169545749110/state-of-mobile-2017-mobile-stagnates</a>.'
     ]
 
     // Update these fields and put them in quotes
     $("#chart-title").text("Global Smart Phone Usage: Percentages of Adults who Reported owning a Smart Phone")
     $("#section-title").text("Reevaluating how we physically connect to the digital world");
     $("#section-name").text("Terra Moran");
-    $("#section-description").html("<p>New technologies (notably, the smart phone) have led to an unsurmountable amount of information that is almost always easily accessible. This has transformed society in many positive ways, but it also means that the average American will spend 5 hours a day on a mobile device.</p>" +
-        "<p>Is this constant connectivity a problem, or is it all positive? Is there a desire to spend less time on devices? Is there a way to stay connected, but not distracted?</p>");
+    $("#section-description").html("<p>New technologies (notably, the smart phone) have led to an unsurmountable amount of information that is almost always easily accessible.This has transformed society in many positive ways, but it also means that the average American will spend 5 hours a day on a mobile device.</p><p>Is this constant connectivity a problem, or is it entirely positive? Is there even a desire to spend less time on devices? Can we create a better design for when and how we recieve information, or a new way to stay connected, but not distracted?</p>");
 
     // Dont touch this stuff
     $("#section-images").html(generateImgHTML(images));
@@ -86,9 +83,7 @@ function jenny() {
     $("#chart-title").text("Distributed Governance of Digital Infrastructure");
     $("#section-title").text("Understanding the physical assets support the parallel digital world");
     $("#section-name").text("Jenny Fan");
-    $("#section-description").html("<p>The backbone of the global digital world has always been supported by physical infrastructure residing in real locations. Despite its role as public utility, much of this ICT infrastructure is private, with a constantly shifting environment over common carriage, net neutrality, and governmental regulation.</p>" +
-        "<p>In 2018, the barriers between the physical and the digital are more porous than ever. The modern individual maintains an increasingly curated digital identity and lives, communicates, and works as fluidly within their smart homes, offices, and vehicles as in their online communities. On a larger scale, cities scramble to fund and implement Smart City infrastructure projects while their streets are tested by private-sector solutions offering everything from connected streetlights to autonomous vehicles. By 2020, the sheer number of IoT devices would mean there are 4x more devices connected to the internet than humans.</p>" +
-        "<p>We are at a turning point as society becomes ever more digitized and connected. Will the ICT model of the new smart city be public, private, or follow a commons model enabled by new forms of distributed collaboration and governance? How will we manage the distributed governance of that infrastructure in a “phygital” world?</p>");
+    $("#section-description").html("<p>In 2018, the barriers between the physical and the digital are more porous than ever. The backbone of the global digital world has always been supported by physical infrastructure residing in real locations. ICT serves as a public utility, but much of its infrastructure is private, with a constantly shifting regulation environment. The modern individual maintains an increasingly curated digital identity and lives, communicates, and works as fluidly within their smart homes, offices, and vehicles as in their online communities. On a larger scale, cities scramble to fund and implement Smart City infrastructure projects while their streets are tested by private-sector solutions offering everything from connected streetlights to autonomous vehicles. By 2020, the sheer number of IoT devices would mean there are 4x more devices connected to the internet than humans. We are at a turning point as society becomes ever more digitized and connected. We need new ICT models for the smart city to manage distributed infrastructure in a 'phygital' world.</p>");
 
     // Dont touch this stuff
     $("#section-images").html(generateImgHTML(images));
@@ -97,7 +92,7 @@ function jenny() {
     // Put your data file name here
     $("#section-description").prepend("<div id='options'></div>");
     datapath = "jenny_data.csv";
-    updateJennyData(datapath, "Population (2018 est)");
+    updateJennyData(datapath, "Distributed Governance of ICT Infrastructure");
 }
 
 
@@ -116,14 +111,14 @@ function saif() {
     references = [
         '"Ancestry and Development: New Evidence Journal of Applied Econometrics, vol. 33, no. 5, August 2018, pp. 748-762.',
         'Culture, Ethnicity and Diversity American Economic Review, vol. 107, no. 9, September 2017, pp. 2479-2513.',
-        'The Diffusion of Institutions Wilson, D. S. and A. Kirman, eds. Complexity and Evolution: Toward a New Synthesis for Economics. Strüngmann Forum Reports, vol. 19, chapter 9, pp. 147-166. Cambridge, MA: The MIT Press, 2016."'
+        'The Diffusion of Institutions Wilson, D. S. and A. Kirman, eds. Complexity and Evolution: Toward a New Synthesis for Economics. Strungmann Forum Reports, vol. 19, chapter 9, pp. 147-166. Cambridge, MA: The MIT Press, 2016."'
     ]
 
     // Update these fields and put them in quotes
     $("#chart-title").text("Genetic Distance of Countries (To USA)");
     $("#section-title").text("Catallaxy: A Market Place of Ideas");
     $("#section-name").text("Saif Haobsh");
-    $("#section-description").text('Catallaxy presents a “market-place of ideas” to understand how information is dispersed or restrained in relation to geographic, genetic, linguistic, and ideological phenomenologies. Layering notions of instutional ontogeny, technological development, geo-political activity, and economic growth, the project seeks to formulate a robust basis for negotiating social plurality.');
+    $("#section-description").text('Catallaxy presents a “market-place of ideas” to understand how information is dispersed or restrained in relation to geographic, genetic, linguistic, and ideological phenomenological. Layering notions of institutional ontogeny, technological development, geo-political activity, and economic growth, an improved foundation for negotiating social plurality can emerge. This creates an opportunity for bringing outdated modes of political representation up to speed with emergent technologies.');
 
     // Dont touch this stuff
     $("#section-images").html(generateImgHTML(images));
@@ -145,14 +140,20 @@ function kate() {
 
     // Add your references, one per line in this format
     references = [
-        "reference 1"
+        "Anon, Dennis. 2018. What does the US government know about you? February 17. Accessed September 13, 2018. <a href='https://privacy.net/us-government-surveillance-spying-data-collection/'>https://privacy.net/us-government-surveillance-spying-data-collection/.</a>.",
+        "Domestic Surveillance Directorate. n.d. Your Data: If You Have Nothing to Hide, You Have Nothing to Fear. Accessed September 13, 2018. <a href='https://nsa.gov1.info/data/'>https://nsa.gov1.info/data/</a>.",
+        "Freedom House. n.d. 'Freedom on the Net 2016.'' Silencing the Messenger: Communication Apps Under Pressure. Accessed September 13, 2018. <a href='https://freedomhouse.org/sites/default/files/FOTN_2016_Full_Report.pdf'>https://freedomhouse.org/sites/default/files/FOTN_2016_Full_Report.pdf</a>",
+        "Google. n.d. We want you to understand what data we collect and use. Accessed September 13, 2018. <a href='https://privacy.google.com/your-data.html'>https://privacy.google.com/your-data.html</a>.",
+        "International Telecommunications Union (ITU). 2017. 'Countries with the highest internet penetration rate as of 2016.' Statista. July. Accessed September 13, 2018. <a href='https://www.statista.com/statistics/227082/countries-with-the-highest-internet-penetration-rate/'>https://www.statista.com/statistics/227082/countries-with-the-highest-internet-penetration-rate/</a>.",
+        "Reporters Without Borders. 2013. The Enemies of Internet, Special Edition: Surveillance. Accessed September 13, 2018. <a href='https://web.archive.org/web/20140711164547/http://surveillance.rsf.org/en/'>https://web.archive.org/web/20140711164547/http://surveillance.rsf.org/en/</a>.",
+        "United Nations Human Rights Council. 2016. 'Oral Revisions.' United Nations General Assembly. June 30. Accessed September 13, 2018. <a href='https://www.article19.org/data/files/Internet_Statement_Adopted.pdf'>https://www.article19.org/data/files/Internet_Statement_Adopted.pdf</a>."
     ]
 
     // Update these fields and put them in quotes
     $("#chart-title").text("Global Internet Penetration Rates (by % of population)");
     $("#section-title").text("Amorphous Data Relationships");
     $("#section-name").text("Kate Spies");
-    $("#section-description").text("In 2016 the United Nations Human Rights Council declared the ‘promotion, protection and enjoyment of human rights on the Internet’ a fundamental freedom. The ability to access the internet is no longer a luxury, but rather a commodity, and as the volume and depth of personal data collection and surveillance grows, the terms of the relationship become critically important. What data is collected, what data is surveilled, how is the data shared, and what control do I have over dissemination and derived-profits? Uncertain data relationships are consciously and sub-consciously navigated at each click, how might we commit to a more equanimous exchange for all players?text");
+    $("#section-description").text("In 2016 the United Nations Human Rights Council declared the ‘promotion, protection and enjoyment of human rights on the Internet’ a fundamental freedom. The ability to access the internet is no longer a luxury, but rather a commodity, and as the volume and depth of personal data collection and surveillance grows, the terms of the relationship become critically important. What data is collected, what data is surveilled, how is the data shared, and what control do I have over dissemination and derived-profits? Uncertain data relationships are consciously and sub-consciously navigated at each click, how might we commit to a more equanimous exchange for all players?");
 
     // Dont touch this stuff
     $("#section-images").html(generateImgHTML(images));
@@ -178,10 +179,10 @@ function janet() {
 
     // Update these fields and put them in quotes
     $("#chart-title").text("Global Social Network Penetration");
-    $("#section-title").text("How can we motivate constructive online conversations?");
+    $("#section-title").text("Motivating constructive online conversations");
     $("#section-name").text("Janet Sung");
     $("#section-description").text("" +
-        "In average, global Internet users spend 135 minutes on social network, which is over one-third of their time online. Messaging family and friends is the most common activity. While social network makes private communication easier, it is potentially a platform for public discussion.");
+        "On average, global Internet users spend 135 minutes on social network, which is over one-third of their time online. Messaging family and friends is the most common activity. While social network makes private communication easier, it is potentially a platform for public discussion.");
 
     // Dont touch this stuff
     $("#section-images").html(generateImgHTML(images));
