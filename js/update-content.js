@@ -1,7 +1,7 @@
 $('input[name=options]').on('change', function() {
     $("#chart-legend").html("");
     window[settings.functionName]($('input[name=options]:checked').attr("id"));
-    $("#section").scrollTop = 0;
+    $("#section").animate({ scrollTop: 0 }, "slow");
 });
 
 
@@ -67,7 +67,7 @@ function terra() {
     ]
 
     // Update these fields and put them in quotes
-    $("#chart-title").text("Global Smart Phone Usage: Percentages of Adults who Reported owning a Smart Phone")
+    $("#chart-title").text("Global Adult Smart Phone Usage (%)")
     $("#section-title").text("Reevaluating how we physically connect to the digital world");
     $("#section-name").text("Terra Moran");
     $("#section-description").html("<p>New technologies (notably, the smart phone) have led to an unsurmountable amount of information that is almost always easily accessible. This has transformed society in many positive ways, but it also means that the average American will spend 5 hours a day on a mobile device.</p><p>Is this constant connectivity a problem, or is it entirely positive? Is there even a desire to spend less time on devices? Can we create a better design for when and how we recieve information, or a new way to stay connected, but not distracted?</p>");
@@ -191,7 +191,7 @@ function janet() {
     ]
 
     // Update these fields and put them in quotes
-    $("#chart-title").text("Global Social Network Penetration");
+    $("#chart-title").text("Global Social Network Penetration (%)");
     $("#section-title").text("Motivating constructive online conversations");
     $("#section-name").text("Janet Sung");
     $("#section-description").text("" +
@@ -206,8 +206,10 @@ function janet() {
 function kiran() {
     // put your images in the "img" folder
     images = [
-        // "Kiran1.png",
-        // "Kiran2.png"
+        "Kiran1.png",
+        "Kiran2.png",
+        "Kiran3.png",
+        "Kiran4.png"
     ];
 
     // Put your data file name here
@@ -216,17 +218,16 @@ function kiran() {
 
     // Add your references, one per line in this format
     references = [
-        "reference 1",
-        "reference 2",
-        "reference 3",
+        '<a href="https://www.parlament.gv.at/PAKT/EU/XXVI/EU/00/55/EU_05523/imfname_10772510.pdf">https://www.parlament.gv.at/PAKT/EU/XXVI/EU/00/55/EU_05523/imfname_10772510.pdf</a>',
+        'PNR: List of Member States who have decided to apply the Directive (EU) 2016/681 to intra-EU flights, Migration and Home Affairs, European Commission. 1 June, 2018, <a href="https://ec.europa.eu/home-affairs/news/list-member-states-applying-pnr-directive-intra-eu-flights_en">https://ec.europa.eu/home-affairs/news/list-member-states-applying-pnr-directive-intra-eu-flights_en</a>',
     ]
 
     // Update these fields and put them in quotes
-    $("#chart-title").text("Countries by Directive Implementation Overlaps: EU Directive 2016/681");
-    // $("#section-title").text("GitLaw: Precedent Provenance and Restructured Revision");
+    $("#chart-title").text("Countries Transposing EU Directive 2016/681");
+    $("#section-title").text("GitLaw: Precedent Provenance and Restructured Revision");
     $("#section-name").text("Kiran Wattamwar");
     $("#section-description").text(
-        "Paragraph you want displayed"
+        "Very loosely, this project aims to bring law into version control and build a Github-like interface and system to track changes and improve legal legibility. This explores an inversion of Lawrence Lessig's \"Code is Law\" thesis and takes it quite literally. The parallels between both are extremely clear and present, and law lends itself well to a system like this because it often follows a consistent syntax, contains references to other documents and is, in its current form, difficult to track seamlessly. In a world where laws carry their own embedded lineages, tracking changes can begin to construct an extremely clear image on the provenance of its contents. This data exercise compares the transposition of an EU Directive that recently met its transposition deadline across various countries to measure overlap in common language and identify major differences between them."
     );
 
     // Dont touch this stuff
@@ -253,8 +254,8 @@ function generateImgHTML(images) {
 
 function generateReferenceHTML(references) {
     var refHTML = "";
-    var refPrefix = '<div>';
-    var refSuffix = '</div>';
+    var refPrefix = '<div class="reference">';
+    var refSuffix = '</div><br>';
     references.forEach( function(r) { refHTML += refPrefix + r + refSuffix; });
     return refHTML;
 }
@@ -289,8 +290,6 @@ function updateJennyData(dataPath, columnName){
 
             $("#options").html(optionsHTML);
 
-
-
             // mapping
             min = Math.pow(10, 1000);
             max = -Math.pow(10, 1000);
@@ -311,7 +310,6 @@ function updateJennyData(dataPath, columnName){
             console.log(dataById);
             data.features.forEach(function(d) { d.countries = dataById[d.id] });
 
-
             colorSaif = d3.scaleLinear().domain([min,max])
                 .range([d3.rgb("#F2F2F2"), d3.rgb('#e03b1a')]);
 
@@ -326,7 +324,7 @@ function updateJennyData(dataPath, columnName){
                 .attr("id","legend");
 
             var colorLegend = d3.legendColor()
-                .shapeWidth(80)
+                .shapeWidth(50)
                 .shapeHeight(15)
                 .cells(11)
                 .orient("horizontal")
@@ -658,7 +656,7 @@ function updateKiranQuantitativeData(dataPath) {
             d3.selectAll(".country")
                 .transition()
                 .duration(300)
-                .style("fill", function(d){ return dataById[d.id] == 0 ? "#032c4f": "#ed8a76"; });
+                .style("fill", function(d){ return dataById[d.id] == 1 ? "#ed8a76":"#032c4f"; });
         })
     })
 }

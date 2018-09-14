@@ -1,102 +1,39 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>The Future of Information | IDEP Assignment 1</title>
-
-
-	<link rel="stylesheet" href="css/bootstrap.min.css" />
-	<link rel="stylesheet" href="css/font-awesome.min.css" />
-	<link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" />
-	<link rel="stylesheet" href="css/featherlight.min.css" type="text/css" />
+    <meta charset="UTF-8">
+    <title>The Future of Information</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" />
+    <link rel="stylesheet" href="css/featherlight.min.css" type="text/css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/html2canvas.js"></script>
+    <script src="js/glitch.js"></script>
+    <style>
+        .test {
+            background:#001e38;
+            color: white;
+            text-align: center;
+            font-size: 19em;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden;
+            font-family: "IBM Plex Mono";
+            text-transform: uppercase;
+        }
+        .big {
+            font-size: 25em;
+        }
+    </style>
 </head>
-<body>
-
-<div class="container-fluid">
-    <div class="row button-row">
-        <div class="btn-group btn-group-toggle" data-toggle="buttons">
-            <label class="btn btn-primary">
-                <input type="radio" name="options" id="terra" autocomplete="off" onclick="terra();"> Technology Across Borders
-            </label>
-            <label class="btn btn-primary">
-                <input type="radio" name="options" id="carla" autocomplete="off" onclick="carla()"> Borders and Thresholds
-            </label>
-            <label class="btn btn-primary">
-                <input type="radio" name="options" id="jenny" autocomplete="off" onclick="jenny();"> Infrastructure
-            </label>
-            <label class="btn btn-primary">
-                <input type="radio" name="options" id="janet" autocomplete="off" onclick="janet();"> Digital Discourse
-            </label>
-            <label class="btn btn-primary">
-                <input type="radio" name="options" id="kate" autocomplete="off"  onclick="kate();"> Data: Public vs Private
-            </label>
-            <label class="btn btn-primary">
-                <input type="radio" name="options" id="saif" autocomplete="off" onclick="saif();"> Catallaxy: Information Communities
-            </label>
-            <label class="btn btn-primary">
-                <input type="radio" name="options" id="kiran" autocomplete="off" onclick="kiran();"> Legal Provenance
-            </label>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-8">
-            <div id="chart">
-                <div id="chart-title">The Future of Information</div>
-                <div id="chart-legend"></div>
-                <div id="chart-container"></div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div id="section">
-                <div id="section-title"></div>
-                <div id="section-name">Carla Saad, Janet Sung, Jenny Fan, Kate Spies, Kiran Wattamwar, Saif Haobsh,  Terra Moran</div>
-                <div id="section-description">
-										<p><em><b>"Those who control the data control the future of life."</b> – Yuval Noah Harari, author of Sapiens and Homo Deus</em></p>
-
-										<p>Digital communities today face the same problem of decline described by political economist Albert Hirschman in the 1970s: as the quality of one's environments decline, users can either exit the platform, stay and voice their outrage, or double down with blind loyalty.<sup><a href=" https://medium.com/@nayafia/no-exit-32417217b6ce" target="_blank">1</a></sup>  Even as hate speech, filter bubbles, fake news, and egregious privacy violations pollute our online environments, corporations do everything possible to keep us captive for their profit models. When people can’t leave, they are forced to stay and voice their outrage -- an increasingly familiar and unpleasant narrative.</p>
-
-										<p>Our team's consideration of how one's personal data is collected, used, stored, and revised begins to evaluate this vital asset as a neutral public good. The potential of data to become currency that destabilizes economies and governing polities hints at its importance in the future of information. The global history of information and communication technologies (ICT) suggest a trend towards government regulation, but we would also like to investigate alternative public, private, and commons-based models the system can be designed to empower the user in the future of information.</p>
-
-										<p>What platforms can enable us as users to have control over where and how our data moves with us, so we can choose to freely exit or stay on the platform, on our own terms? Are there ways e-Government models can facilitate a fluid digital citizenship linked to our physical bodies? Are there ways online social networks themselves can be designed to curate and foster more civil discussion and engage with the plurality of our identites? How should the ICT of the future be funded, so that the technology companies that serve as the de facto governance on the internet coordinate with real world governments to support smart city infrastructure? Throughout these many changes, is there a way legal changes can be sensibly tracked and understood, particularly across jurisdictions? As Lawrence Lessig states, "Code is law",<sup><a href="https://harvardmagazine.com/2000/01/code-is-law-html" target="_blank">2</a></sup> and the future of information requires careful evaluation of the values that guide this code and the architecture cyberspace is built on.</p>
+<body onload="distortNode(document.getElementById('target'));$('#target').delay(5000).fadeOut();">
 
 
-
-                </div>
-                <div id="section-images">
-                </div>
-                <div id="section-references">
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-	<!-- Load JS libraries -->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-    <script src="https://d3js.org/d3.v4.min.js"></script>
-    <script src="https://d3js.org/queue.v1.min.js"></script>
-    <script src="https://d3js.org/topojson.v1.min.js"></script>
-    <script src="js/d3-tip.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.js"></script>
-		<script src="js/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
-
-    <script>
-        $(document).ready(function(){
-            var h = window.outerHeight*0.75 - $(".button-row").height();
-            console.log(h);
-            $("#section").css({"height":h, "overflow":"auto"});
-        });
-
-    </script>
-
-	<!-- Choropleth and second visualization -->
-	<script src="js/chart.js"></script>
-    <script src="js/update-content.js"></script>
-
+<div id="target" class="test">the future is information</div>
+    <a class="btn enter-button" href="vis.html">enter the project</a>
 </body>
 </html>

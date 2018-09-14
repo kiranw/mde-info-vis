@@ -199,3 +199,12 @@ body {
 .radioOptions input[type="radio"]:checked+label {
   background-color: #ce7361;
 }
+
+
+.enter-button {
+    position: absolute;
+    bottom: 10%;
+    width: 20%;
+    left: 40%;
+    font-size: 2em;
+}

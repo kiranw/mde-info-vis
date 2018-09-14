@@ -32,7 +32,7 @@ TZA,Tanzania,0
 ARG,Argentina,0
 ESP,Spain,1
 KEN,Kenya,0
-POL,Poland,0
+POL,Poland,1
 DZA,Algeria,0
 CAN,Canada,0
 UGA,Uganda,0
@@ -77,26 +77,26 @@ GRC,Greece,0
 PRT,Portugal,0
 TUN,Tunisia,0
 TCD,Chad,0
-BEL,Belgium,0
+BEL,Belgium,1
 GIN,Guinea,0
 CZE,Czech Republic,0
 SOM,Somalia,0
 BOL,Bolivia,0
-HUN,Hungary,0
+HUN,Hungary,1
 BDI,Burundi,0
 DOM,Dominican Republic,0
 BLR,Belarus,0
 HTI,Haiti,0
-SWE,Sweden,0
+SWE,Sweden,1
 BEN,Benin,0
 AZE,Azerbaijan,0
-AUT,Austria,0
+AUT,Austria,1
 HND,Honduras,0
 CHE,Switzerland,0
 TJK,Tajikistan,0
 ISR,Israel,0
 SRB,Serbia,0
-BGR,Bulgaria,0
+BGR,Bulgaria,1
 HKG,Hong Kong,0
 LAO,Laos,0
 LBY,Libya,0
@@ -109,7 +109,7 @@ NIC,Nicaragua,0
 ERI,Eritrea,0
 DNK,Denmark,1
 KGZ,Kyrgyzstan,0
-SVK,Slovakia,0
+SVK,Slovakia,1
 FIN,Finland,0
 SLE,Sierra Leone,0
 ARE,United Arab Emirates,0
@@ -120,16 +120,16 @@ NOR,Norway,0
 BIH,Bosnia and Herzegovina,0
 GEO,Georgia,0
 CRI,Costa Rica,0
-HRV,Croatia,0
+HRV,Croatia,1
 MDA,Moldova,0
 NZL,New Zealand,0
-IRL,Ireland,1
+IRL,Ireland,0
 COG,"Congo, Republic of the",0
 LBN,Lebanon,0
 PRI,Puerto Rico,0
 LBR,Liberia,0
 ALB,Albania,0
-LTU,Lithuania,0
+LTU,Lithuania,1
 URY,Uruguay,0
 PAN,Panama,0
 MRT,Mauritania,0
@@ -139,7 +139,7 @@ ARM,Armenia,0
 JAM,Jamaica,0
 KWT,Kuwait,0
 PSE,West Bank,0
-LVA,Latvia,0
+LVA,Latvia,1
 NAM,Namibia,0
 MKD,Macedonia,0
 BWA,Botswana,0
@@ -168,10 +168,10 @@ GNQ,Equatorial Guinea,0
 SLB,Solomon Islands,0
 168,Macau,0
 169,Cape Verde,0
-LUX,Luxembourg,0
+LUX,Luxembourg,1
 ESH,Western Sahara,0
 SUR,Suriname,0
-173,Malta,0
+173,Malta,1
 174,Maldives,0
 BRN,Brunei,0
 BLZ,Belize,0
