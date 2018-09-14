@@ -39,9 +39,9 @@ function carla() {
     updateCarlaData("Carla1.csv");
     options = "<div id=\"section-options\"><form class=\"radioOptions\" action=\"\">"
     +
-        '<input type="radio" class="radio" id="carla1" onclick="updateCarlaData(\'Carla1.csv\',\'Europe: Energy import-export activity in Europe (GWh)\')\"> <label for="carla1" class="btn btn-secondary">Europe: Energy import-export activity in Europe (GWh)</label>'
+        '<input type="radio" class="radio" id="carla1" onclick="updateCarlaData(\'Carla1.csv\',\'Energy flow across European borders (GWh)\')\"> <label for="carla1" class="btn btn-secondary">Energy flow across European borders (GWh)</label>'
         +
-        '<input type="radio" class="radio" id="carla2" onclick="updateCarlaData(\'Carla2.csv\',\'Integration of renewable energy across the world (Mw)\')\"> <label for="carla2" class="btn btn-secondary">Integration of renewable energy across the world (Mw)</label>'
+        '<input type="radio" class="radio" id="carla2" onclick="updateCarlaData(\'Carla2.csv\',\'Integration of renewable energy globally (Mw)\')\"> <label for="carla2" class="btn btn-secondary">Integration of renewable energy globally (Mw)</label>'
         +
         "<br><br></form></div><br>";
 
