@@ -52,8 +52,10 @@ function carla() {
 function terra() {
     // put your images in the "img" folder
     images = [
-        // "Terra1.png",
-        // "Terra2.png",
+        "Terra1.png",
+        "Terra2.png",
+        "Terra3.png",
+        "Terra4.png"
     ];
 
     // Put your data file name here
@@ -117,8 +119,8 @@ function saif() {
     ];
 
     // Put your data file name here
-    datapath = "Saif_Data.tsv";
-    updateSaifMultiplierData(datapath);
+    // datapath = "Saif_Data.tsv";
+    // updateSaifMultiplierData(datapath);
 
     // Add your references, one per line in this format
     references = [
@@ -136,6 +138,11 @@ function saif() {
     // Dont touch this stuff
     $("#section-images").html(generateImgHTML(images));
     $("#section-references").html(generateReferenceHTML(references));
+
+    // Put your data file name here
+    $("#section-description").prepend("<div id='options'></div>");
+    datapath = "data_SAH.csv";
+    updateSaifMultiData(datapath, "Genetic Distance of Countries (To USA)");
 }
 
 
@@ -143,7 +150,7 @@ function saif() {
 function kate() {
     // put your images in the "img" folder
     images = [
-        // "Kate1.png",
+        "Kate1.png",
         // "Kate2.png"
     ];
 
@@ -261,6 +268,96 @@ function generateReferenceHTML(references) {
 }
 
 
+
+function updateSaifMultiData(dataPath, columnName){
+    $("#chart-title").text(columnName);
+    console.log("gettinghere");
+    console.log(columnName);
+    $("#chart-legend").html("");
+    d3.json("js/world_countries.json", function(data){
+        d3.csv("data/" + dataPath, function(customData) {
+            console.log(customData[0][columnName]);
+            totalColumns = Object.keys(customData[0]).length;
+            var columnNames = Object.keys(customData[0]).slice(2, totalColumns);
+
+            optionsPrefix = "<div id=\"section-options\"><form class=\"radioOptions\" action=\"\">";
+            radioPrefix = '<input type="radio" class="radio" name="saif" id="';
+            radioID = '" value="';
+            radioMid = '" onclick="updateSaifMultiData(\''+ dataPath+ '\',\'';
+            radioSuffix = '\')"><label class="btn btn-secondary" for="';
+            radioID2 = '">';
+            radioLabel = '</label><br>';
+            optionsSuffix = "</form></div>";
+
+            optionsHTML = optionsPrefix;
+
+            columnNames.forEach(function(c){
+                optionsHTML += radioPrefix + c + radioID + c + radioMid + c + radioSuffix + c + radioID2 + c + radioLabel;
+            })
+            optionsHTML += "<br><br>" + optionsSuffix;
+
+            $("#options").html(optionsHTML);
+
+            // mapping
+            min = Math.pow(10, 1000);
+            max = -Math.pow(10, 1000);
+
+            var dataById = data_template;
+            customData.forEach(function(d) {
+                if (d[columnName] != null) {
+                    d[columnName] = d[columnName].replace('%','');
+                    if (+d[columnName] > max) {
+                        max = +d[columnName];
+                    }
+                    if (+d[columnName] < min) {
+                        min = +d[columnName];
+                    }
+                    dataById[data_country_to_id[d.name]] = +d[columnName];
+                }
+            });
+            console.log(dataById);
+            data.features.forEach(function(d) { d.countries = dataById[d.id] });
+
+            colorSaif = d3.scaleLinear().domain([min,max])
+                .range([d3.rgb("#F2F2F2"), d3.rgb('#e03b1a')]);
+
+            console.log(dataById);
+
+            $("#chart-legend").innerHTML = "";
+
+            var legendsvg = d3.select("#chart-legend")
+                .append("svg")
+                .attr("height", 40)
+                .attr("width", 800)
+                .attr("id","legend");
+
+            var colorLegend = d3.legendColor()
+                .shapeWidth(50)
+                .shapeHeight(15)
+                .cells(11)
+                .orient("horizontal")
+                .scale(colorSaif);
+
+            legendsvg.append("g")
+                .attr("class", "legendLinear")
+                .attr("color", "white")
+                .call(colorLegend);
+
+            d3.selectAll(".country")
+                .transition()
+                .duration(300)
+                .style("fill", function(d){
+                    if (dataById[d.id] == null || isNaN(dataById[d.id])){
+                        return "#032c4f";
+                    }
+                    return colorSaif(dataById[d.id]); });
+        });
+    });
+}
+
+
+
+
 function updateJennyData(dataPath, columnName){
     $("#chart-title").text(columnName);
     console.log("gettinghere");
@@ -275,7 +372,7 @@ function updateJennyData(dataPath, columnName){
             optionsPrefix = "<div id=\"section-options\"><form class=\"radioOptions\" action=\"\">";
             radioPrefix = '<input type="radio" class="radio" name="jenny" id="';
             radioID = '" value="';
-            radioMid = '" onclick="updateJennyData(\'Jenny_Data.csv\',\'';
+            radioMid = '" onclick="updateJennyData(\''+dataPath+'\',\'';
             radioSuffix = '\')"><label class="btn btn-secondary" for="';
             radioID2 = '">';
             radioLabel = '</label><br>';

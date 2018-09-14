@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bab2a731-326e-45c7-baf1-f84394fd6750" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/glitch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vis.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/kiran_data.csv" afterPath="$PROJECT_DIR$/data/kiran_data.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/chart.js" afterPath="$PROJECT_DIR$/js/chart.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/update-content.js" afterPath="$PROJECT_DIR$/js/update-content.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -23,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="update-content.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="update-content.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/update-content.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
-              <caret line="193" column="65" lean-forward="false" selection-start-line="193" selection-start-column="65" selection-end-line="193" selection-end-column="65" />
+            <state relative-caret-position="265">
+              <caret line="57" column="20" lean-forward="true" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -63,7 +57,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="glitch.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="glitch.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/glitch.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="241">
@@ -120,13 +114,13 @@
       <find>swed</find>
       <find>western</find>
       <find>KiranQ</find>
-      <find>somalil</find>
       <find>kiran(</find>
       <find>tooltip</find>
       <find>svg.call(tip);</find>
       <find>janet()</find>
-      <find>html2canv</find>
       <find>kate</find>
+      <find>html2canv</find>
+      <find>somalil</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -148,11 +142,11 @@
         <option value="$PROJECT_DIR$/data/Jenny_Data.csv" />
         <option value="$PROJECT_DIR$/data/kiran_data.csv" />
         <option value="$PROJECT_DIR$/js/chart.js" />
-        <option value="$PROJECT_DIR$/js/update-content.js" />
         <option value="$PROJECT_DIR$/glitch.html" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/glitch.js" />
+        <option value="$PROJECT_DIR$/js/update-content.js" />
       </list>
     </option>
   </component>
@@ -205,11 +199,6 @@
               <item name="mde-info-vis" type="462c0819:PsiDirectoryNode" />
               <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="mde-info-vis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mde-info-vis" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -221,6 +210,11 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -244,16 +238,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1536801973041</updated>
-      <workItem from="1536801975555" duration="29541000" />
+      <workItem from="1536801975555" duration="30394000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29541000" />
+    <option name="totallyTimeSpent" value="30394000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -348,22 +341,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/kiran_data.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="241" column="11" lean-forward="false" selection-start-line="241" selection-start-column="4" selection-end-line="241" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/update-content.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="193" column="65" lean-forward="false" selection-start-line="193" selection-start-column="65" selection-end-line="193" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/chart.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -419,6 +396,22 @@
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/kiran_data.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="241" column="11" lean-forward="false" selection-start-line="241" selection-start-column="4" selection-end-line="241" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/update-content.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="57" column="20" lean-forward="true" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
