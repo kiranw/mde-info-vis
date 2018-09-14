@@ -1,4 +1,5 @@
 var format = d3.format(",");
+var format_pct = d3.format(.00%);
 
 // Set tooltips
 var tip = d3.tip()
