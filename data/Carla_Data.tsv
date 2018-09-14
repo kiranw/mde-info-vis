@@ -1,243 +1,200 @@
-id	name	values
-CHN	China	null
-IND	India	null
-USA	United States	null
-IDN	Indonesia	null
-BRA	Brazil	null
-PAK	Pakistan	null
-BGD	Bangladesh	null
-NGA	Nigeria	null
-RUS	Russia	null
-JPN	Japan	null
-MEX	Mexico	null
-PHL	Philippines	null
-VNM	Vietnam	null
-ETH	Ethiopia	null
-DEU	Germany	-55367
-EGY	Egypt	null
-TUR	Turkey	-603
-COD	Congo, Democratic Republic of the	null
-IRN	Iran	null
-THA	Thailand	null
-FRA	France	-40236
-GBR	United Kingdom	16391
-ITA	Italy	null
-MMR	Burma	null
-ZAF	South Africa	null
-KOR	Korea, South	null
-UKR	Ukraine	null
-COL	Colombia	null
-SDN	Sudan	null
-TZA	Tanzania	null
-ARG	Argentina	null
-ESP	Spain	9171
-KEN	Kenya	null
-POL	Poland	2287
-DZA	Algeria	null
-CAN	Canada	null
-UGA	Uganda	null
-MAR	Morocco	null
-PER	Peru	null
-IRQ	Iraq	null
-SAU	Saudi Arabia	null
-AFG	Afghanistan	null
-NPL	Nepal	null
-UZB	Uzbekistan	null
-VEN	Venezuela	null
-MYS	Malaysia	null
-GHA	Ghana	null
-YEM	Yemen	null
-TWN	Taiwan	null
-PRK	Korea, North	null
-SYR	Syria	null
-ROU	Romania	-2895
-MOZ	Mozambique	null
-AUS	Australia	null
-LKA	Sri Lanka	null
-MDG	Madagascar	null
-CIV	Cote d'Ivoire	null
-CMR	Cameroon	null
-NLD	Netherlands	null
-CHL	Chile	null
-BFA	Burkina Faso	null
-NER	Niger	null
-KAZ	Kazakhstan	null
-MWI	Malawi	null
-ECU	Ecuador	null
-KHM	Cambodia	null
-SEN	Senegal	null
-MLI	Mali	null
-GTM	Guatemala	null
-AGO	Angola	null
-ZMB	Zambia	null
-ZWE	Zimbabwe	null
-CUB	Cuba	null
-RWA	Rwanda	null
-GRC	Greece	6225
-PRT	Portugal	-2683
-TUN	Tunisia	null
-TCD	Chad	null
-BEL	Belgium	6028
-GIN	Guinea	null
-CZE	Czech Republic	-13030
-SOM	Somalia	null
-BOL	Bolivia	null
-HUN	Hungary	12877
-BDI	Burundi	null
-DOM	Dominican Republic	null
-BLR	Belarus	null
-HTI	Haiti	null
-SWE	Sweden	-19151
-BEN	Benin	null
-AZE	Azerbaijan	null
-AUT	Austria	7729
-HND	Honduras	null
-CHE	Switzerland	6034
-TJK	Tajikistan	null
-ISR	Israel	null
-SRB	Serbia	1342
-BGR	Bulgaria	-5489
-HKG	Hong Kong	null
-LAO	Laos	null
-LBY	Libya	null
-JOR	Jordan	null
-PRY	Paraguay	null
-TGO	Togo	null
-PNG	Papua New Guinea	null
-SLV	El Salvador	null
-NIC	Nicaragua	null
-ERI	Eritrea	null
-DNK	Denmark	4714
-KGZ	Kyrgyzstan	null
-SVK	Slovakia	3030
-FIN	Finland	20443
-SLE	Sierra Leone	null
-ARE	United Arab Emirates	null
-TKM	Turkmenistan	null
-CAF	Central African Republic	null
-SGP	Singapore	null
-NOR	Norway	-14926
-BIH	Bosnia and Herzegovina	-1840
-GEO	Georgia	null
-CRI	Costa Rica	null
-HRV	Croatia	7377
-MDA	Moldova	null
-NZL	New Zealand	null
-IRL	Ireland	-680
-COG	Congo, Republic of the	null
-LBN	Lebanon	null
-PRI	Puerto Rico	null
-LBR	Liberia	null
-ALB	Albania	2916
-LTU	Lithuania	8677
-URY	Uruguay	null
-PAN	Panama	null
-MRT	Mauritania	null
-MNG	Mongolia	null
-OMN	Oman	null
-ARM	Armenia	null
-JAM	Jamaica	null
-KWT	Kuwait	null
-PSE	West Bank	null
-LVA	Latvia	-64
-NAM	Namibia	null
-MKD	Macedonia	1972
-BWA	Botswana	null
-SVN	Slovenia	-423
-LSO	Lesotho	null
-GMB	Gambia, The	null
-KWT	Kosovo	null
-149	Gaza Strip	null
-GNB	Guinea-Bissau	null
-GAB	Gabon	null
-SWZ	Swaziland	null
-153	Mauritius	null
-EST	Estonia	-2731
-TTO	Trinidad and Tobago	null
-TLS	Timor-Leste	null
-CYP	Cyprus	null
-FJI	Fiji	null
-QAT	Qatar	null
-160	Comoros	null
-GUY	Guyana	null
-DJI	Djibouti	null
-163	Bahrain	null
-BTN	Bhutan	null
-MNE	Montenegro	1129
-GNQ	Equatorial Guinea	null
-SLB	Solomon Islands	null
-168	Macau	null
-169	Cape Verde	null
-LUX	Luxembourg	6175
-ESH	Western Sahara	null
-SUR	Suriname	null
-173	Malta	null
-174	Maldives	null
-BRN	Brunei	null
-BLZ	Belize	null
-BHS	Bahamas, The	null
-ISL	Iceland	37750
-179	French Polynesia	null
-180	Barbados	null
-181	Mayotte	null
-NCL	New Caledonia	null
-183	Netherlands Antilles	3897
-VUT	Vanuatu	null
-185	Samoa	null
-186	Sao Tome and Principe	null
-187	Saint Lucia	null
-188	Tonga	null
-189	Virgin Islands	null
-190	Grenada	null
-191	Micronesia, Federated States of	null
-192	Aruba	null
-193	Saint Vincent and the Grenadines	null
-194	Kiribati	null
-195	Jersey	null
-196	Seychelles	null
-197	Antigua and Barbuda	null
-198	Andorra	null
-199	Isle of Man	null
-DOM	Dominica	null
-201	Bermuda	null
-202	American Samoa	null
-203	Marshall Islands	null
-204	Guernsey	null
-GRL	Greenland	null
-206	Cayman Islands	null
-207	Saint Kitts and Nevis	null
-208	Faroe Islands	null
-209	Northern Mariana Islands	null
-210	Liechtenstein	null
-211	San Marino	null
-212	Monaco	null
-213	Saint Martin	null
-214	Gibraltar	null
-215	British Virgin Islands	null
-216	Turks and Caicos Islands	null
-217	Palau	null
-218	Akrotiri	null
-219	Dhekelia	null
-220	Wallis and Futuna	null
-221	Anguilla	null
-222	Nauru	null
-223	Cook Islands	null
-224	Tuvalu	null
-225	Saint Helena, Ascension, and Tristan da Cunha	null
-226	Saint Barthelemy	null
-227	Saint Pierre and Miquelon	null
-228	Montserrat	null
-FLK	Falkland Islands (Islas Malvinas)	null
-230	Norfolk Island	null
-231	Svalbard	null
-232	Christmas Island	null
-233	Tokelau	null
-234	Niue	null
-235	Holy See (Vatican City)	null
-236	Cocos (Keeling) Islands	null
-237	Pitcairn Islands	null
-ATA	Antarctica	null
-ATF	French Southern and Antarctic Lands	null
-SDS	South Sudan	null
-ABV	Somaliland	null
-OSA	Kosovo	null
+id	name	value (MW)
+CHN	China	545206
+IND	India	90748
+USA	United States	214766
+IDN	Indonesia	8682
+BRA	Brazil	122951
+PAK	Pakistan	8595
+BGD	Bangladesh	425
+NGA	Nigeria	2062
+RUS	Russia	51747
+JPN	Japan	71809
+MEX	Mexico	18301
+PHL	Philippines	6496
+VNM	Vietnam	17973
+ETH	Ethiopia	4188
+DEU	Germany	105839
+EGY	Egypt	3660
+TUR	Turkey	34083
+COD	Congo, Democratic Republic of the	2579
+IRN	Iran 	10606
+THA	Thailand	8650
+FRA	France	44666
+GBR	United Kingdom	33544
+ITA	Italy	51485
+ZAF	South Africa	4064
+KOR	Korea, South	10087
+UKR	Ukraine	6225
+COL	Colombia	11862
+SDN	Sudan	1793
+TZA	Tanzania	659
+ARG	Argentina	10043
+ESP	Spain	47954
+KEN	Kenya	2057
+POL	Poland	7930
+DZA	Algeria	536
+CAN	Canada	96636
+UGA	Uganda	796
+MAR	Morocco	2309
+PER	Peru	5228
+IRQ	Iraq	2291
+SAU	Saudi Arabia	48
+AFG	Afghanistan	296
+NPL	Nepal	934
+UZB	Uzbekistan	1763
+VEN	Venezuela	15190
+MYS	Malaysia	6963
+GHA	Ghana	1612
+YEM	Yemen	30
+PRK	Korea, North	5768
+SYR	Syria	1572
+ROU	Romania	11264
+MOZ	Mozambique	2200
+AUS	Australia	18091
+LKA	Sri Lanka	1859
+MDG	Madagascar	175
+CIV	Cote d'Ivoire	604
+CMR	Cameroon	730
+NLD	Netherlands	7122
+CHL	Chile	10140
+BFA	Burkina Faso	42
+NER	Niger	8
+KAZ	Kazakhstan	2855
+MWI	Malawi	373
+ECU	Ecuador	4602
+KHM	Cambodia	963
+SEN	Senegal	157
+MLI	Mali	190
+GTM	Guatemala	2662
+AGO	Angola	936
+ZMB	Zambia	2436
+ZWE	Zimbabwe	898
+CUB	Cuba	631
+RWA	Rwanda	109
+GRC	Greece	8435
+PRT	Portugal	12534
+TUN	Tunisia	348
+TCD	Chad	1
+BEL	Belgium	6696
+GIN	Guinea	370
+BOL	Bolivia	635
+HUN	Hungary	1171
+BDI	Burundi	59
+BLR	Belarus	132
+HTI	Haiti	55
+SWE	Sweden	27835
+BEN	Benin	6
+AZE	Azerbaijan	1172
+AUT	Austria	18522
+HND	Honduras	1455
+CHE	Switzerland	15195
+TJK	Tajikistan	4638
+ISR	Israel	852
+SRB	Serbia	2441
+BGR	Bulgaria	4151
+LBY	Libya	5
+JOR	Jordan	493
+PRY	Paraguay	8810
+TGO	Togo	69
+PNG	Papua New Guinea	331
+SLV	El Salvador	1050
+NIC	Nicaragua	670
+ERI	Eritrea	1
+DNK	Denmark	7342
+KGZ	Kyrgyzstan	2955
+SVK	Slovakia	2419
+FIN	Finland	7067
+SLE	Sierra Leone	88
+ARE	United Arab Emirates	139
+CAF	Central African Republic	19
+SGP	Singapore	254
+NOR	Norway	32746
+BIH	Bosnia and Herzegovina	1742
+GEO	Georgia	2898
+CRI	Costa Rica	2900
+HRV	Croatia	2740
+MDA	Moldova	70
+NZL	New Zealand	7114
+IRL	Ireland	3359
+COG	Congo, Republic of the	216
+LBN	Lebanon	303
+PRI	Puerto Rico	361
+LBR	Liberia	26
+ALB	Albania	2034
+LTU	Lithuania	757
+URY	Uruguay	3259
+PAN	Panama	2005
+MRT	Mauritania	117
+MNG	Mongolia	85
+OMN	Oman	1
+ARM	Armenia	1303
+JAM	Jamaica	187
+KWT	Kuwait	41
+LVA	Latvia	1787
+NAM	Namibia	364
+MKD	Macedonia	716
+BWA	Botswana	2
+SVN	Slovenia	1441
+LSO	Lesotho	75
+KWT	Kosovo	55
+GNB	Guinea-Bissau	0
+GAB	Gabon	330
+SWZ	Swaziland	186
+153	Mauritius	170
+EST	Estonia	619
+TTO	Trinidad and Tobago	3
+TLS	Timor-Leste	0
+CYP	Cyprus	250
+FJI	Fiji	218
+QAT	Qatar	44
+160	Comoros	1
+GUY	Guyana	44
+DJI	Djibouti	0
+163	Bahrain	6
+BTN	Bhutan	1614
+MNE	Montenegro	674
+GNQ	Equatorial Guinea	127
+SLB	Solomon Islands	3
+LUX	Luxembourg	244
+SUR	Suriname	188
+173	Malta	85
+174	Maldives	4
+BRN	Brunei	1
+BLZ	Belize	89
+BHS	Bahamas, The	1
+ISL	Iceland	2655
+179	French Polynesia	75
+180	Barbados	19
+181	Mayotte	13
+NCL	New Caledonia	121
+VUT	Vanuatu	8
+185	Samoa	20
+186	Sao Tome and Principe	2
+187	Saint Lucia	1
+188	Tonga	3
+189	Virgin Islands	4
+190	Grenada	1
+191	Micronesia, Federated States of	1
+192	Aruba	38
+193	Saint Vincent and the Grenadines	7
+194	Kiribati	3
+196	Seychelles	8
+197	Antigua and Barbuda	4
+DOM	Dominica	7
+202	American Samoa	1
+203	Marshall Islands	2
+207	Saint Kitts and Nevis	4
+208	Faroe Islands	59
+215	British Virgin Islands	1
+217	Palau	1
+221	Anguilla	2
+222	Nauru	1
+223	Cook Islands	3
+224	Tuvalu	1
+227	Saint Pierre and Miquelon	1
+FLK	Falkland Islands (Islas Malvinas)	3
+233	Tokelau	1
+234	Niue	0
+SDS	South Sudan	0
+ABV	Somaliland	4
+OSA	Kosovo	55

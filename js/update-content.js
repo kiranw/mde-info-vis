@@ -92,7 +92,7 @@ function saif() {
 
     // Put your data file name here
     datapath = "Saif_Data.tsv";
-    updateSaifData(datapath);
+    updateSaifMultiplierData(datapath);
 
     // Add your references, one per line in this format
     references = [
@@ -288,6 +288,65 @@ function updateSaifData(dataPath) {
     })
 }
 
+
+function updateSaifMultiplierData(dataPath){
+    d3.json("js/world_countries.json", function(data){
+        d3.tsv("data/" + dataPath, function(customData){
+            min = Math.pow(10, 1000);
+            max = -Math.pow(10, 1000);
+
+            var dataById = data_template;
+            customData.forEach(function(d) {
+                if (d.values != null) {
+                    if (+d.values*100 > max) {
+                        max = +d.values*100;
+                    }
+                    if (+d.values*100 < min) {
+                        min = +d.values*100;
+                    }
+                    dataById[data_country_to_id[d.name]] = +d.values*100;
+                }
+            });
+            console.log(dataById);
+            data.features.forEach(function(d) { d.countries = dataById[d.id] });
+
+
+            colorSaif = d3.scaleLinear().domain([min,max])
+                .range([d3.rgb("#F2F2F2"), d3.rgb('#e03b1a')]);
+
+            console.log(dataById);
+
+            $("#chart-legend").innerHTML = "";
+
+            var legendsvg = d3.select("#chart-legend")
+                .append("svg")
+                .attr("height", 40)
+                .attr("width", 800)
+                .attr("id","legend");
+
+            var colorLegend = d3.legendColor()
+                .shapeWidth(50)
+                .shapeHeight(15)
+                .cells(11)
+                .orient("horizontal")
+                .scale(colorSaif);
+
+            legendsvg.append("g")
+                .attr("class", "legendLinear")
+                .attr("color", "white")
+                .call(colorLegend);
+
+            d3.selectAll(".country")
+                .transition()
+                .duration(300)
+                .style("fill", function(d){
+                    if (dataById[d.id] == null || isNaN(dataById[d.id])){
+                        return "#032c4f";
+                    }
+                    return colorSaif(dataById[d.id]); })
+        })
+    })
+}
 
 
 
