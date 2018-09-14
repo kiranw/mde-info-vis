@@ -23,7 +23,7 @@ function carla() {
 
     // Update these fields and put them in quotes
     $("#chart-title").text("Integration of Renewable Energy Globally (GWh)");
-    $("#section-title").text("Between blurred and enforced borders");
+    $("#section-title").text("Between Blurred and Enforced Borders");
     $("#section-name").text("Carla Saad");
     $("#section-description").text("Description paragraph of your text");
 
@@ -90,7 +90,7 @@ function jenny() {
 
     // Update these fields and put them in quotes
     $("#chart-title").text("Distributed Governance of Digital Infrastructure");
-    $("#section-title").text("Understanding the physical assets support the parallel digital world");
+    $("#section-title").text("Physical assets support the parallel digital world");
     $("#section-name").text("Jenny Fan");
     $("#section-description").html("<p>In 2018, the barriers between the physical and the digital are more porous than ever. The backbone of the global digital world has always been supported by physical infrastructure residing in real locations. ICT serves as a public utility, but much of its infrastructure is private, with a constantly shifting regulation environment. The modern individual maintains an increasingly curated digital identity and lives, communicates, and works as fluidly within their smart homes, offices, and vehicles as in their online communities. On a larger scale, cities scramble to fund and implement Smart City infrastructure projects while their streets are tested by private-sector solutions offering everything from connected streetlights to autonomous vehicles. By 2020, the sheer number of IoT devices would mean there are 4x more devices connected to the internet than humans. We are at a turning point as society becomes ever more digitized and connected. We need new ICT models for the smart city to manage distributed infrastructure in a 'phygital' world.</p>");
 
@@ -101,7 +101,7 @@ function jenny() {
     // Put your data file name here
     $("#section-description").prepend("<div id='options'></div>");
     datapath = "jenny_data.csv";
-    updateJennyData(datapath, "Distributed Governance of ICT Infrastructure");
+    updateJennyData(datapath, "Telecommunication Infrastructure Index");
 }
 
 
@@ -240,9 +240,10 @@ function kiran() {
 
 function generateImgHTML(images) {
     var imgHTML = "";
-    var imgPrefix = '<img class="section-image" src="img/';
-    var imgSuffix = '">';
-    images.forEach( function(i) { imgHTML += imgPrefix + i + imgSuffix; });
+    var link = '<a href="img/';
+    var imgPrefix = '" data-featherlight="image" data-featherlight-variant="lightbox"><img class="section-image" src="img/';
+    var imgSuffix = '"></a>';
+    images.forEach( function(i) { imgHTML += link + i + imgPrefix + i + imgSuffix; });
     return imgHTML;
 }
 
@@ -264,7 +265,7 @@ function updateJennyData(dataPath, columnName){
         d3.csv("data/" + dataPath, function(customData) {
             console.log(customData[0][columnName]);
             totalColumns = Object.keys(customData[0]).length;
-            var columnNames = Object.keys(customData[0]).slice(3, totalColumns);
+            var columnNames = Object.keys(customData[0]).slice(6, totalColumns);
 
             optionsPrefix = "<div id=\"section-options\"><form action=\"\">";
             radioPrefix = '<input type="radio" class="radio" name="jenny" value="';
