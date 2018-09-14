@@ -14,9 +14,6 @@ function carla() {
         // "Carla3.png"
     ];
 
-    // Put your data file name here
-    datapath = "Carla_Data.tsv";
-    updateSaifData(datapath);
 
     // Add your references, one per line in this format
     references = [
@@ -33,6 +30,18 @@ function carla() {
     // Dont touch this stuff
     $("#section-images").html(generateImgHTML(images));
     $("#section-references").html(generateReferenceHTML(references));
+
+
+    // Put your data file name here
+    // updateSaifData("Carla_Data.tsv");
+    updateCarlaData("Carla1.csv");
+    options = "<div id=\"section-options\"><form action=\"\">" +
+        '<input type="radio" class="radio" name="carla" onclick="updateCarlaData(\'Carla1.csv\')\"> Physical Energy Flows - (Imports - Exports) (GWh)' +
+        '<br><input type="radio" class="radio" name="carla" onclick="updateCarlaData(\'Carla2.csv\')\"> Energy flow across European borders (MW)' +
+        "<br><br></form></div><br>";
+
+    $("#section-description").prepend("<div id='options'></div>");
+    $("#options").html(options);
 }
 
 
@@ -52,15 +61,15 @@ function terra() {
         "Pew Research, <a href='http://assets.pewresearch.org/wp-content/uploads/sites/2/2018/06/15135408/Pew-Research-Center_Global-Tech-Social-Media-Use_2018.06.19.pdf'>http://assets.pewresearch.org/wp-content/uploads/sites/2/2018/06/15135408/Pew-Research-Center_Global-Tech-Social-Media-Use_2018.06.19.pdf</a>",
         "Pew Research, <a href='http://www.pewinternet.org/dataset/jan-3-10-2018-core-trends-survey/Pew Research'>http://www.pewinternet.org/dataset/jan-3-10-2018-core-trends-survey/Pew Research</a>",
         "Pew Research, <a href='http://assets.pewresearch.org/wp-content/uploads/sites/2/2018/06/15135408/Pew-Research-Center_Global-Tech-Social-Media-Use_2018.06.19.pdf'>http://assets.pewresearch.org/wp-content/uploads/sites/2/2018/06/15135408/Pew-Research-Center_Global-Tech-Social-Media-Use_2018.06.19.pdf</a>",
-        "Pew Research, <a href='http://www.pewinternet.org/dataset/jan-3-10-2018-core-trends-survey/'>http://www.pewinternet.org/dataset/jan-3-10-2018-core-trends-survey/</a>"
+        "Pew Research, <a href='http://www.pewinternet.org/dataset/jan-3-10-2018-core-trends-survey/'>http://www.pewinternet.org/dataset/jan-3-10-2018-core-trends-survey/</a>",
+        "Flurrymobile. \"Flurry State of Mobile 2017: With Captive Mobile Audiences, New App Growth Stagnates.\" Flurry Blog. January 10, 2018. Accessed September 14, 2018. http://flurrymobile.tumblr.com/post/169545749110/state-of-mobile-2017-mobile-stagnates."
     ]
 
     // Update these fields and put them in quotes
     $("#chart-title").text("Global Smart Phone Usage: Percentages of Adults who Reported owning a Smart Phone")
     $("#section-title").text("Reevaluating how we physically connect to the digital world");
     $("#section-name").text("Terra Moran");
-    $("#section-description").html("<p>New technologies (notably, the smart phone) have led to an unsurmountable amount of information that is almost always easily accessible. This has transformed society in many positive ways, but it also means that the average American will spend 5 hours a day on a mobile device.</p>" +
-        "<p>Is this constant connectivity a problem, or is it all positive? Is there a desire to spend less time on devices? Is there a way to stay connected, but not distracted?</p>");
+    $("#section-description").html("<p>New technologies (notably, the smart phone) have led to an unsurmountable amount of information that is almost always easily accessible.This has transformed society in many positive ways, but it also means that the average American will spend 5 hours a day on a mobile device. </p><p>Is this constant connectivity a problem, or is it entirely positive? Is there even a desire to spend less time on devices? Can we create a better design for when and how we recieve information, or a new way to stay connected, but not distracted?</p>");
 
     // Dont touch this stuff
     $("#section-images").html(generateImgHTML(images));
@@ -123,7 +132,7 @@ function saif() {
     $("#chart-title").text("Genetic Distance of Countries (To USA)");
     $("#section-title").text("Catallaxy: A Market Place of Ideas");
     $("#section-name").text("Saif Haobsh");
-    $("#section-description").text('Catallaxy presents a “market-place of ideas” to understand how information is dispersed or restrained in relation to geographic, genetic, linguistic, and ideological phenomenologies. Layering notions of instutional ontogeny, technological development, geo-political activity, and economic growth, the project seeks to formulate a robust basis for negotiating social plurality.');
+    $("#section-description").text('Catallaxy presents a “market-place of ideas” to understand how information is dispersed or restrained in relation to geographic, genetic, linguistic, and ideological phenomenological. Layering notions of institutional ontogeny, technological development, geo-political activity, and economic growth, an improved foundation for negotiating social plurality can emerge. This creates an opportunity for bringing outdated modes of political representation up to speed with emergent technologies.');
 
     // Dont touch this stuff
     $("#section-images").html(generateImgHTML(images));
@@ -208,8 +217,8 @@ function kiran() {
     ]
 
     // Update these fields and put them in quotes
-    $("#chart-title").text("Countries by Directive Overlaps : EU Directive 2016/681");
-    $("#section-title").text("GitLaw: Precedent Provenance and Restructured Revision");
+    $("#chart-title").text("Countries by Directive Implementation Overlaps: EU Directive 2016/681");
+    // $("#section-title").text("GitLaw: Precedent Provenance and Restructured Revision");
     $("#section-name").text("Kiran Wattamwar");
     $("#section-description").text(
         "Paragraph you want displayed"
@@ -245,10 +254,6 @@ function generateReferenceHTML(references) {
 }
 
 
-
-
-
-
 function updateJennyData(dataPath, columnName){
     $("#chart-title").text(columnName);
     console.log("gettinghere");
@@ -269,9 +274,9 @@ function updateJennyData(dataPath, columnName){
             optionsHTML = optionsPrefix;
 
             columnNames.forEach(function(c){
-                optionsHTML += radioPrefix + c + radioMid + c + radioSuffix + c + "<br><br>"
+                optionsHTML += radioPrefix + c + radioMid + c + radioSuffix + c +"<br>"
             })
-            optionsHTML += optionsSuffix;
+            optionsHTML += "<br><br>" + optionsSuffix;
 
             $("#options").html(optionsHTML);
 
@@ -337,7 +342,67 @@ function updateJennyData(dataPath, columnName){
 
 
 
+function updateCarlaData(dataPath){
+    $("#chart-legend").html("");
+    d3.json("js/world_countries.json", function(data){
+        d3.csv("data/" + dataPath, function(customData){
+            min = Math.pow(10, 1000);
+            max = -Math.pow(10, 1000);
+            var columnName = Object.keys(customData[0])[2];
+            $("#chart-title").html(columnName);
 
+            var dataById = data_template;
+            customData.forEach(function(d) {
+                if (d[columnName] != null) {
+                    if (+d[columnName] > max) {
+                        max = +d[columnName];
+                    }
+                    if (+d[columnName] < min) {
+                        min = +d[columnName];
+                    }
+                    dataById[data_country_to_id[d.name]] = +d[columnName];
+                }
+            });
+            console.log(dataById);
+            data.features.forEach(function(d) { d.countries = dataById[d.id] });
+
+
+            colorSaif = d3.scaleLinear().domain([min,max])
+                .range([d3.rgb("#F2F2F2"), d3.rgb('#e03b1a')]);
+
+            console.log(dataById);
+
+            $("#chart-legend").innerHTML = "";
+
+            var legendsvg = d3.select("#chart-legend")
+                .append("svg")
+                .attr("height", 40)
+                .attr("width", 800)
+                .attr("id","legend");
+
+            var colorLegend = d3.legendColor()
+                .shapeWidth(50)
+                .shapeHeight(15)
+                .cells(11)
+                .orient("horizontal")
+                .scale(colorSaif);
+
+            legendsvg.append("g")
+                .attr("class", "legendLinear")
+                .attr("color", "white")
+                .call(colorLegend);
+
+            d3.selectAll(".country")
+                .transition()
+                .duration(300)
+                .style("fill", function(d){
+                    if (dataById[d.id] == null || isNaN(dataById[d.id])){
+                        return "#032c4f";
+                    }
+                    return colorSaif(dataById[d.id]); })
+        })
+    })
+}
 
 
 function updateSaifData(dataPath) {

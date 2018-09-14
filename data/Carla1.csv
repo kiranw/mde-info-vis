@@ -1,0 +1,243 @@
+id,name,Physical Energy Flows - (Imports - Exports) (GWh)
+CHN,China,null
+IND,India,null
+USA,United States,null
+IDN,Indonesia,null
+BRA,Brazil,null
+PAK,Pakistan,null
+BGD,Bangladesh,null
+NGA,Nigeria,null
+RUS,Russia,null
+JPN,Japan,null
+MEX,Mexico,null
+PHL,Philippines,null
+VNM,Vietnam,null
+ETH,Ethiopia,null
+DEU,Germany,-55367
+EGY,Egypt,null
+TUR,Turkey,-603
+COD,"Congo, Democratic Republic of the",null
+IRN,Iran,null
+THA,Thailand,null
+FRA,France,-40236
+GBR,United Kingdom,16391
+ITA,Italy,null
+MMR,Burma,null
+ZAF,South Africa,null
+KOR,"Korea, South",null
+UKR,Ukraine,null
+COL,Colombia,null
+SDN,Sudan,null
+TZA,Tanzania,null
+ARG,Argentina,null
+ESP,Spain,9171
+KEN,Kenya,null
+POL,Poland,2287
+DZA,Algeria,null
+CAN,Canada,null
+UGA,Uganda,null
+MAR,Morocco,null
+PER,Peru,null
+IRQ,Iraq,null
+SAU,Saudi Arabia,null
+AFG,Afghanistan,null
+NPL,Nepal,null
+UZB,Uzbekistan,null
+VEN,Venezuela,null
+MYS,Malaysia,null
+GHA,Ghana,null
+YEM,Yemen,null
+TWN,Taiwan,null
+PRK,"Korea, North",null
+SYR,Syria,null
+ROU,Romania,-2895
+MOZ,Mozambique,null
+AUS,Australia,null
+LKA,Sri Lanka,null
+MDG,Madagascar,null
+CIV,Cote d'Ivoire,null
+CMR,Cameroon,null
+NLD,Netherlands,null
+CHL,Chile,null
+BFA,Burkina Faso,null
+NER,Niger,null
+KAZ,Kazakhstan,null
+MWI,Malawi,null
+ECU,Ecuador,null
+KHM,Cambodia,null
+SEN,Senegal,null
+MLI,Mali,null
+GTM,Guatemala,null
+AGO,Angola,null
+ZMB,Zambia,null
+ZWE,Zimbabwe,null
+CUB,Cuba,null
+RWA,Rwanda,null
+GRC,Greece,6225
+PRT,Portugal,-2683
+TUN,Tunisia,null
+TCD,Chad,null
+BEL,Belgium,6028
+GIN,Guinea,null
+CZE,Czech Republic,-13030
+SOM,Somalia,null
+BOL,Bolivia,null
+HUN,Hungary,12877
+BDI,Burundi,null
+DOM,Dominican Republic,null
+BLR,Belarus,null
+HTI,Haiti,null
+SWE,Sweden,-19151
+BEN,Benin,null
+AZE,Azerbaijan,null
+AUT,Austria,7729
+HND,Honduras,null
+CHE,Switzerland,6034
+TJK,Tajikistan,null
+ISR,Israel,null
+SRB,Serbia,1342
+BGR,Bulgaria,-5489
+HKG,Hong Kong,null
+LAO,Laos,null
+LBY,Libya,null
+JOR,Jordan,null
+PRY,Paraguay,null
+TGO,Togo,null
+PNG,Papua New Guinea,null
+SLV,El Salvador,null
+NIC,Nicaragua,null
+ERI,Eritrea,null
+DNK,Denmark,4714
+KGZ,Kyrgyzstan,null
+SVK,Slovakia,3030
+FIN,Finland,20443
+SLE,Sierra Leone,null
+ARE,United Arab Emirates,null
+TKM,Turkmenistan,null
+CAF,Central African Republic,null
+SGP,Singapore,null
+NOR,Norway,-14926
+BIH,Bosnia and Herzegovina,-1840
+GEO,Georgia,null
+CRI,Costa Rica,null
+HRV,Croatia,7377
+MDA,Moldova,null
+NZL,New Zealand,null
+IRL,Ireland,-680
+COG,"Congo, Republic of the",null
+LBN,Lebanon,null
+PRI,Puerto Rico,null
+LBR,Liberia,null
+ALB,Albania,2916
+LTU,Lithuania,8677
+URY,Uruguay,null
+PAN,Panama,null
+MRT,Mauritania,null
+MNG,Mongolia,null
+OMN,Oman,null
+ARM,Armenia,null
+JAM,Jamaica,null
+KWT,Kuwait,null
+PSE,West Bank,null
+LVA,Latvia,-64
+NAM,Namibia,null
+MKD,Macedonia,1972
+BWA,Botswana,null
+SVN,Slovenia,-423
+LSO,Lesotho,null
+GMB,"Gambia, The",null
+KWT,Kosovo,null
+149,Gaza Strip,null
+GNB,Guinea-Bissau,null
+GAB,Gabon,null
+SWZ,Swaziland,null
+153,Mauritius,null
+EST,Estonia,-2731
+TTO,Trinidad and Tobago,null
+TLS,Timor-Leste,null
+CYP,Cyprus,null
+FJI,Fiji,null
+QAT,Qatar,null
+160,Comoros,null
+GUY,Guyana,null
+DJI,Djibouti,null
+163,Bahrain,null
+BTN,Bhutan,null
+MNE,Montenegro,1129
+GNQ,Equatorial Guinea,null
+SLB,Solomon Islands,null
+168,Macau,null
+169,Cape Verde,null
+LUX,Luxembourg,6175
+ESH,Western Sahara,null
+SUR,Suriname,null
+173,Malta,null
+174,Maldives,null
+BRN,Brunei,null
+BLZ,Belize,null
+BHS,"Bahamas, The",null
+ISL,Iceland,37750
+179,French Polynesia,null
+180,Barbados,null
+181,Mayotte,null
+NCL,New Caledonia,null
+183,Netherlands Antilles,3897
+VUT,Vanuatu,null
+185,Samoa,null
+186,Sao Tome and Principe,null
+187,Saint Lucia,null
+188,Tonga,null
+189,Virgin Islands,null
+190,Grenada,null
+191,"Micronesia, Federated States of",null
+192,Aruba,null
+193,Saint Vincent and the Grenadines,null
+194,Kiribati,null
+195,Jersey,null
+196,Seychelles,null
+197,Antigua and Barbuda,null
+198,Andorra,null
+199,Isle of Man,null
+DOM,Dominica,null
+201,Bermuda,null
+202,American Samoa,null
+203,Marshall Islands,null
+204,Guernsey,null
+GRL,Greenland,null
+206,Cayman Islands,null
+207,Saint Kitts and Nevis,null
+208,Faroe Islands,null
+209,Northern Mariana Islands,null
+210,Liechtenstein,null
+211,San Marino,null
+212,Monaco,null
+213,Saint Martin,null
+214,Gibraltar,null
+215,British Virgin Islands,null
+216,Turks and Caicos Islands,null
+217,Palau,null
+218,Akrotiri,null
+219,Dhekelia,null
+220,Wallis and Futuna,null
+221,Anguilla,null
+222,Nauru,null
+223,Cook Islands,null
+224,Tuvalu,null
+225,"Saint Helena, Ascension, and Tristan da Cunha",null
+226,Saint Barthelemy,null
+227,Saint Pierre and Miquelon,null
+228,Montserrat,null
+FLK,Falkland Islands (Islas Malvinas),null
+230,Norfolk Island,null
+231,Svalbard,null
+232,Christmas Island,null
+233,Tokelau,null
+234,Niue,null
+235,Holy See (Vatican City),null
+236,Cocos (Keeling) Islands,null
+237,Pitcairn Islands,null
+ATA,Antarctica,null
+ATF,French Southern and Antarctic Lands,null
+SDS,South Sudan,null
+ABV,Somaliland,null
+OSA,Kosovo,null
