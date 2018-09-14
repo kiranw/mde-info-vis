@@ -142,7 +142,7 @@ function kate() {
 
 function janet() {
     // put your images in the "img" folder
-    images = ["Janet_1.png", "Janet_2.png"];
+    images = ["Janet1.png", "Janet2.png"];
 
     // Put your data file name here
     datapath = "Janet_Data.tsv";
@@ -150,7 +150,7 @@ function janet() {
 
     // Add your references, one per line in this format
     references = [
-        '"Zhang, Amy X., Bryan Culbertson, and Praveen Paritosh. ""Characterizing online discussion using coarse discourse sequences."" In Proceedings of the Eleventh International Conference on Web and Social Media. AAAI Press. 2017.',
+        '"Zhang, Amy X., Bryan Culbertson, and Praveen Paritosh. "Characterizing online discussion using coarse discourse sequences." In Proceedings of the Eleventh International Conference on Web and Social Media. AAAI Press. 2017.',
         'We Are Social. 2018. Global Digital Report 2018. https://digitalreport.wearesocial.com',
         'The Verge. Octover 2017. The Verge Tech Survey. https://www.theverge.com/2017/10/27/16550640/'
     ]
@@ -160,7 +160,7 @@ function janet() {
     $("#section-title").text("How can we motivate constructive online conversations?");
     $("#section-name").text("Janet Sung");
     $("#section-description").text("" +
-        "In average, global Internet users spend 135 minutes on social network. Messaging family and friends is the most common activity.");
+        "In average, global Internet users spend 135 minutes on social network, which is over one-third of their time online. Messaging family and friends is the most common activity. While social network makes private communication easier, it is potentially a platform for public discussion.");
 
     // Dont touch this stuff
     $("#section-images").html(generateImgHTML(images));
