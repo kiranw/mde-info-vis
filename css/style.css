@@ -7,10 +7,14 @@ body {
     overflow-y: hidden;
 }
 
-
 .btn {
+    border-radius: 0;
     background-color: #ed8a76;
-    border: 1px solid white;
+    /* border: 1px solid white; */
+    font-family: "IBM Plex Mono";
+}
+.btn-secondary {
+  border-radius: 5px;
 }
 
 .btn:hover, .btn:visited, .btn:active {
@@ -181,4 +185,17 @@ body {
 .featherlight-content {
   background: rgb(3, 44, 79) !important;
   max-width: 80%;
+}
+
+.radioOptions input[type="radio"] {
+  display: none;
+}
+.radioOptions label {
+  display: inline-block;
+  font-size: 12px;
+  border: 0;
+  margin: 2px;
+}
+.radioOptions input[type="radio"]:checked+label {
+  background-color: #ce7361;
 }

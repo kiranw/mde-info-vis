@@ -25,7 +25,7 @@ function carla() {
     $("#chart-title").text("Integration of Renewable Energy Globally (GWh)");
     $("#section-title").text("Between Blurred and Enforced Borders");
     $("#section-name").text("Carla Saad");
-    $("#section-description").text("Description paragraph of your text");
+    $("#section-description").html("<p>Borders between countries are caught in a duality nowadays: enforced and blurred. For the advantage of countries' economies and strategies, the state of borders fluctuate between those two extents.</p> <p>The energy sector is one of the examples that embody the need of countries for cooperation in order to meet their needs specially in light of climate change. The recent investments of the European Union to reach a more energy independent strategy through exchange of renewable energy across borders is an illustration of geographical interconnectedness with the deployment of new technologies.</p> <p>Advanced Technologies are also used to enforce the frontier line but now under the \"smart borders\" title. The idea of linking geographic lines to the human body as a way of identification moving the discourse into the digital realm. The integration of biometrics in defining the identity and human flow across borders for security purpose following the concept of \"the body does not lie\" does not really protect systems from being hacked and infiltration to happen.</p>");
 
     // Dont touch this stuff
     $("#section-images").html(generateImgHTML(images));
@@ -35,9 +35,9 @@ function carla() {
     // Put your data file name here
     // updateSaifData("Carla_Data.tsv");
     updateCarlaData("Carla1.csv");
-    options = "<div id=\"section-options\"><form action=\"\">" +
-        '<input type="radio" class="radio" name="carla" onclick="updateCarlaData(\'Carla1.csv\')\"> Physical Energy Flows - (Imports - Exports) (GWh)' +
-        '<br><input type="radio" class="radio" name="carla" onclick="updateCarlaData(\'Carla2.csv\')\"> Energy flow across European borders (MW)' +
+    options = "<div id=\"section-options\"><form class=\"radioOptions\" action=\"\">" +
+        '<input type="radio" class="radio" id="carla1" name="carla" onclick="updateCarlaData(\'Carla1.csv\')\"> <label for="carla1" class="btn btn-secondary">Physical Energy Flows - (Imports - Exports) (GWh)</label>' +
+        '<br><input type="radio" class="radio" id="carla2" name="carla" onclick="updateCarlaData(\'Carla2.csv\')\"> <label for="carla2" class="btn btn-secondary">Energy flow across European borders (MW)</label>' +
         "<br><br></form></div><br>";
 
     $("#section-description").prepend("<div id='options'></div>");
@@ -182,8 +182,8 @@ function janet() {
     // Add your references, one per line in this format
     references = [
         '"Zhang, Amy X., Bryan Culbertson, and Praveen Paritosh. "Characterizing online discussion using coarse discourse sequences." In Proceedings of the Eleventh International Conference on Web and Social Media. AAAI Press. 2017.',
-        'We Are Social. 2018. Global Digital Report 2018. https://digitalreport.wearesocial.com',
-        'The Verge. Octover 2017. The Verge Tech Survey. https://www.theverge.com/2017/10/27/16550640/'
+        'We Are Social. 2018. Global Digital Report 2018. <a href="https://digitalreport.wearesocial.com">https://digitalreport.wearesocial.com</a>',
+        'The Verge. Octover 2017. The Verge Tech Survey. <a href="https://www.theverge.com/2017/10/27/16550640/">https://www.theverge.com/2017/10/27/16550640/</a>'
     ]
 
     // Update these fields and put them in quotes
@@ -267,16 +267,19 @@ function updateJennyData(dataPath, columnName){
             totalColumns = Object.keys(customData[0]).length;
             var columnNames = Object.keys(customData[0]).slice(6, totalColumns);
 
-            optionsPrefix = "<div id=\"section-options\"><form action=\"\">";
-            radioPrefix = '<input type="radio" class="radio" name="jenny" value="';
+            optionsPrefix = "<div id=\"section-options\"><form class=\"radioOptions\" action=\"\">";
+            radioPrefix = '<input type="radio" class="radio" name="jenny" id="';
+            radioID = '" value="';
             radioMid = '" onclick="updateJennyData(\'Jenny_Data.csv\',\'';
-            radioSuffix = '\')">';
+            radioSuffix = '\')"><label class="btn btn-secondary" for="';
+            radioID2 = '">';
+            radioLabel = '</label><br>';
             optionsSuffix = "</form></div>";
 
             optionsHTML = optionsPrefix;
 
             columnNames.forEach(function(c){
-                optionsHTML += radioPrefix + c + radioMid + c + radioSuffix + c +"<br>"
+                optionsHTML += radioPrefix + c + radioID + c + radioMid + c + radioSuffix + c + radioID2 + c + radioLabel;
             })
             optionsHTML += "<br><br>" + optionsSuffix;
 
