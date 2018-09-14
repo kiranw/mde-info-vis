@@ -22,7 +22,7 @@ function carla() {
     ]
 
     // Update these fields and put them in quotes
-    $("#chart-title").text("Integration of Renewable Energy Globally (GWh)");
+    $("#chart-title").text("Europe: Energy import-export activity in Europe (GWh)");
     $("#section-title").text("Between Blurred and Enforced Borders");
     $("#section-name").text("Carla Saad");
     $("#section-description").html("<p>Borders between countries are caught in a duality nowadays: enforced and blurred. For the advantage of countries' economies and strategies, the state of borders fluctuate between those two extents.</p> <p>The energy sector is one of the examples that embody the need of countries for cooperation in order to meet their needs specially in light of climate change. The recent investments of the European Union to reach a more energy independent strategy through exchange of renewable energy across borders is an illustration of geographical interconnectedness with the deployment of new technologies.</p> <p>Advanced Technologies are also used to enforce the frontier line but now under the \"smart borders\" title. The idea of linking geographic lines to the human body as a way of identification moving the discourse into the digital realm. The integration of biometrics in defining the identity and human flow across borders for security purpose following the concept of \"the body does not lie\" does not really protect systems from being hacked and infiltration to happen.</p>");
@@ -38,9 +38,9 @@ function carla() {
     updateCarlaData("Carla1.csv");
     options = "<div id=\"section-options\"><form class=\"radioOptions\" action=\"\">"
     +
-        '<input type="radio" class="radio" id="carla1" onclick="updateCarlaData(\'Carla1.csv\')\"> <label for="carla1" class="btn btn-secondary">Europe: Energy import-export activity in Europe (GWh)</label>'
+        '<input type="radio" class="radio" id="carla1" onclick="updateCarlaData(\'Carla1.csv\',\'Europe: Energy import-export activity in Europe (GWh)\')\"> <label for="carla1" class="btn btn-secondary">Europe: Energy import-export activity in Europe (GWh)</label>'
         +
-        '<input type="radio" class="radio" id="carla2" onclick="updateCarlaData(\'Carla2.csv\')\"> <label for="carla2" class="btn btn-secondary">Integration of renewable energy across the world (Mw)</label>'
+        '<input type="radio" class="radio" id="carla2" onclick="updateCarlaData(\'Carla2.csv\',\'Integration of renewable energy across the world (Mw)\')\"> <label for="carla2" class="btn btn-secondary">Integration of renewable energy across the world (Mw)</label>'
         +
         "<br><br></form></div><br>";
 
@@ -447,7 +447,7 @@ function updateJennyData(dataPath, columnName){
 
 
 
-function updateCarlaData(dataPath){
+function updateCarlaData(dataPath, columnTitle){
     $("#chart-legend").html("");
 
     d3.json("js/world_countries.json", function(data){
@@ -457,7 +457,7 @@ function updateCarlaData(dataPath){
             var columnName = Object.keys(customData[0])[2];
             console.log(dataPath, columnName);
 
-            $("#chart-title").html(columnName);
+            $("#chart-title").html(columnTitle);
 
             var dataById = data_template;
             customData.forEach(function(d) {
