@@ -368,7 +368,7 @@ function updateJennyData(dataPath, columnName){
         d3.csv("data/" + dataPath, function(customData) {
             console.log(customData[0][columnName]);
             totalColumns = Object.keys(customData[0]).length;
-            var columnNames = Object.keys(customData[0]).slice(6, totalColumns);
+            var columnNames = Object.keys(customData[0]).slice(5, totalColumns);
 
             optionsPrefix = "<div id=\"section-options\"><form class=\"radioOptions\" action=\"\">";
             radioPrefix = '<input type="radio" class="radio" name="jenny" id="';
